@@ -12,7 +12,7 @@ $root = $_SERVER["DOCUMENT_ROOT"];
 </head>
 <body>
 
-<?=$root;?>
+<?php echo $root;?>
 <?php include "/inc/footer.php" ?>
 <?php include "/inc/scripts.php" ?>
 </body>
