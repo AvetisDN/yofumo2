@@ -1,3 +1,6 @@
+<?php
+$root = $_SERVER["DOCUMENT_ROOT"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +12,7 @@
 </head>
 <body>
 
-
+<?=$root;?>
 <?php include "/inc/footer.php" ?>
 <?php include "/inc/scripts.php" ?>
 </body>
