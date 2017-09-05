@@ -13,7 +13,7 @@
             $('.header-menu').slideDown();
         },2500);
         setTimeout(function () {
-            $('.content').fadeIn(500);
+            $('.content, .product-teaser, .product-page footer').fadeIn(500);
             particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function() {});
             slider();
             $(document).mousewheel(function () {
