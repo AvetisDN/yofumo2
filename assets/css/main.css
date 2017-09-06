@@ -5,6 +5,7 @@ body, html {
     background: #fafafa url("../img/bg.png") repeat-x top center;
     color: #1a1a1a;
     line-height: 1.3333rem;
+    overflow-x: hidden;
 }
 
 @-webkit-keyframes sk-bounce {
@@ -579,6 +580,12 @@ footer .row .right a img {
 .product-overview figure figcaption h2 {
     font-size: 48px;
     margin-bottom: 2rem;
+    font-weight: 400;
+}
+.product-overview figure figcaption h3 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    color:#686868;
 }
 .product-overview figure figcaption blockquote {
     color: #4e4e4e;
@@ -623,12 +630,18 @@ footer .row .right a img {
     line-height: 1.25em;
     color: #275b4d;
 }
+.product-overview figure figcaption ol.small li {
+    width: 25%;
+    text-align: center;
+}
 .product-overview figure figcaption ol li img {
     height: 60px;
 }
 
 .product-overview-icons {
     display: flex;
+    transition: 500ms ease;
+    overflow: hidden;
 }
 .product-overview-icons::after {
     display: block;
@@ -644,6 +657,24 @@ footer .row .right a img {
     align-items: center;
     justify-content: center;
 }
+.product-overview-icons.small>div {
+    flex-direction: column;
+    flex-basis: 11.1111%;
+    flex-shrink: 0;
+    padding: 1rem 0;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.2em;
+}
+#icons-full {
+    height: 0;
+}
+.product-overview-icons.small>div p>span {
+    text-transform: none;
+}
 .product-overview-icons>div>span {
     display: inline-block;
     background-color: #686868;
@@ -653,9 +684,20 @@ footer .row .right a img {
     border-radius: 38px;
     margin-right: 1rem;
 }
+.product-overview-icons.small>div>span{
+    background-color: transparent;
+    text-align: center;
+    height: 100px;
+    margin-bottom: .5rem;
+}
 .product-overview-icons>div>span img {
     width: 70%;
     margin: 15%;
+}
+.product-overview-icons.small>div>span img {
+    width: auto;
+    height: 100px;
+    margin: auto;
 }
 
 .product-teaser {
@@ -870,4 +912,123 @@ footer .row .right a img {
 .product-overview-columns2>div img {
     height: 100px;
     margin-bottom: 2rem;
+}
+
+
+.product-overview-icon-switcher {
+    width: 840px;
+    height:75px;
+    border: 2px solid #686868;
+    border-radius: 38px;
+    box-sizing: border-box;
+    padding: 7px;
+    margin: 1rem auto 2rem auto;
+    position: relative;
+    font-size: 0;
+}
+.product-overview-icon-switcher .switcher-slider {
+    position: absolute;
+    background-color: #a7a7a7;
+    width: 404px;
+    height: 58px;
+    border-radius: 30px;
+    top:7px;
+    left: 7px;
+    transition: 400ms ease;
+}
+.product-overview-icon-switcher .switcher-slider.right-pos {
+    left:424px;
+}
+.product-overview-icon-switcher .switcher-slider.left-pos::after {
+    display: block;
+    content: '';
+    width: 34px;
+    height: 58px;
+    background: url("../svg/products/arrow.png") center left no-repeat;
+    position: absolute;
+    top:0;
+    right:-30px;
+}
+.product-overview-icon-switcher .switcher-slider.right-pos::after {
+    display: block;
+    content: '';
+    width: 34px;
+    height: 58px;
+    background: url("../svg/products/arrow2.png") center right no-repeat;
+    position: absolute;
+    top:0;
+    left:-30px;
+}
+.product-overview-icon-switcher a {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    color: #a4a4a4;
+    font-size: 48px;
+    text-transform: uppercase;
+    width: 50%;
+    text-align: center;
+    line-height: 56px;
+}
+.product-overview-icon-switcher a.active {
+    color: #1f1f1f;
+}
+#icons-full, #icons-quick {
+    margin-bottom:3rem !important;
+}
+
+
+.products-testimonial {
+    width: 1300px;
+    margin: 4rem auto;
+    position: relative;
+    height: 260px;
+    clear: both;
+}
+.products-testimonial .arrow-prev,
+.products-testimonial .arrow-next {
+    display: block;
+    position: absolute;
+    min-height: 150px;
+    height: 100%;
+    width: 52px;
+    background: url("../svg/products/arrow-next.png") center space no-repeat;
+    top:0;
+    right:0;
+}
+.products-testimonial .arrow-prev {
+    background-image: url("../svg/products/arrow-prev.png");
+    left: 0;
+}
+.products-testimonial ul {
+    width:940px;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+}
+.products-testimonial ul li {
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 24px;
+    font-weight: 300;
+    color: #4e4e4e;
+    font-style: italic;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.333em;
+}
+.products-testimonial ul li span {
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+    margin-top: 1rem;
+}
+.products-testimonial ul li:first-child {
+    display: flex;
+    opacity: 1;
 }
