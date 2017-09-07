@@ -84,5 +84,10 @@
         $('body').removeClass('stage1').addClass('stage3');
     });
 
+    $('.header-menu li:has(ul)').hover(function () {
+        $('header').addClass('dark');
+    }, function () {
+        $('header').removeClass('dark');
+    });
 
 })();

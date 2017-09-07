@@ -155,6 +155,42 @@ header {
     float: left;
     margin-left: 4vw;
 }
+header.dark{
+    background-color: #353535;
+}
+.header-menu li>ul {
+    position: absolute;
+    background-color: #353535;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: 300ms ease;
+    z-index: 998;
+    left: 0;
+    padding-left: 30%;
+}
+.header-menu li:hover>ul {
+    height: 145px;
+}
+.header-menu li>ul li {
+    display: inline-block;
+    text-align: center;
+    padding-top: 35px;
+    margin-left: 2rem;
+}
+.header-menu li>ul li img{
+    width: 85px;
+    height: 70px;
+    transition: 200ms ease;
+}
+.header-menu li>ul li:hover img {
+    opacity: .6;
+}
+.header-menu li>ul li span {
+    display: block;
+    font-size: 12px;
+}
 .header-menu li a {
     display: block;
     position: relative;
@@ -1166,3 +1202,5 @@ footer .row .right a img {
 .teaser-overlay {
 
 }
+
+
