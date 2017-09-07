@@ -79,4 +79,10 @@
     }
 
 
+    $('.clickme, #close').click(function (e) {
+        e.preventDefault();
+        $('body').removeClass('stage1').addClass('stage3');
+    });
+
+
 })();
