@@ -13,15 +13,17 @@
             $('.header-menu').slideDown();
         },2500);
         setTimeout(function () {
-            $('.content, .product-teaser, .product-page footer').fadeIn(500);
+            $('.content, .product-teaser, .product-page footer, .gallery').fadeIn(500);
             particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function() {});
-            slider();
-            $(document).mousewheel(function () {
-                $('footer').addClass('show');
-            });
-            $('.scroll-icon').click(function () {
-                $('footer').addClass('show');
-            });
+            if($('body').hasClass('homepage')) {
+                slider();
+                $(document).mousewheel(function () {
+                    $('footer').addClass('show');
+                });
+                $('.scroll-icon').click(function () {
+                    $('footer').addClass('show');
+                });
+            }
         },3000);
     });
 
@@ -89,5 +91,44 @@
     }, function () {
         $('header').removeClass('dark');
     });
+
+    $('.gallery>article>a').click(function (e) {
+        e.preventDefault();
+        $('.detailed-view').fadeIn(500);
+    });
+    $('#close2').click(function (e) {
+        e.preventDefault();
+        $('.detailed-view').fadeOut(300);
+    });
+    gallery();
+    function gallery(){
+        var galActive = 0;
+        $('.detailed-view a.gallery-prev').click(function (e) {
+            e.preventDefault();
+            galActive--;
+            if(galActive<0) galActive = $('.small-picture a').length - 1;
+            changePic();
+        });
+        $('.detailed-view a.gallery-next').click(function (e) {
+            e.preventDefault();
+            galActive++;
+            if(galActive>$('.small-picture a').length - 1) galActive = 0;
+            changePic();
+        });
+        $('.small-picture a').click(function (e) {
+            e.preventDefault();
+            galActive = $(this).index();
+            changePic();
+        });
+
+        function changePic(){
+            $('.small-picture a').removeClass('active');
+            $('.small-picture a').eq(galActive).addClass('active');
+            $('.big-picture-showcase').css({
+                backgroundImage: "url('"+$('.small-picture a').eq(galActive).attr('href')+"')"
+            });
+        }
+    }
+
 
 })();
