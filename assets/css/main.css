@@ -6,6 +6,7 @@ body, html {
     color: #1a1a1a;
     line-height: 1.3333rem;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 body.teaser-page.stage1 {
     overflow: hidden;
@@ -57,8 +58,8 @@ body.teaser-page.stage1 {
 }
 
 header {
-    height: 16vh;
-    padding-top: 7vh !important;
+    height: 13vh;
+    padding-top: 4vh !important;
     box-sizing: border-box !important;
     transition: background-color 300ms ease;
 }
@@ -77,7 +78,7 @@ header {
     border-radius: 34px;
     background-color: #275b4d;
     opacity: 0.6;
-    top:-15px;
+    top:-11px;
     -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
     animation: sk-bounce 2.0s infinite ease-in-out;
 }
@@ -88,7 +89,7 @@ header {
     border-radius: 34px;
     background-color: #275b4d;
     opacity: 0.6;
-    top:calc(7vh - 15px);
+    top:calc(4vh - 11px);
     left: 3.875vw;
     -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
     animation: sk-bounce 2.0s infinite ease-in-out;
@@ -148,6 +149,11 @@ header {
     text-transform: uppercase;
     padding-left: 13px;
     display: none;
+}
+.logo-text span {
+    color: #686868;
+    font-weight: 300;
+    font-size:21px;
 }
 .teaser-page.stage1 .header-menu {
     display: none !important;
@@ -314,21 +320,23 @@ header.dark{
     text-align: right;
 }
 #slider .slides-container figure figcaption h2 {
-    font-size:5vw;
-    padding-top: 5vh;
+    font-size:4.5vw;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
     animation-name: figcaption;
     animation-delay: 450ms;
     animation-duration: 400ms;
     animation-play-state: paused;
     animation-timing-function: ease;
     animation-fill-mode: backwards;
+    line-height: 1em;
 }
 #slider .slides-container figure figcaption p {
     width: 50%;
     margin-left: 50%;
     color: #686868;
-    font-size: 18px;
-    padding-top: 3vh;
+    font-size: 16px;
+    margin-top: 1rem;
     line-height: 1.333em;
     animation-name: figcaption;
     animation-delay: 650ms;
@@ -446,8 +454,9 @@ header.dark{
     display: inline-block;
     background-color: #ff0000;
     color: #ffffff;
-    padding: 9px 24px;
+    padding: 7px 20px;
     border-radius: 18px;
+    font-size: 16px;
     font-weight: 300;
     position: absolute;
     top:0;
@@ -468,7 +477,7 @@ header.dark{
     padding: 9px 24px;
     font-weight: 300;
     border-radius: 30px;
-    font-size:28px;
+    font-size:22px;
     animation-name: figcaption;
     animation-delay: 1000ms;
     animation-duration: 400ms;
@@ -559,6 +568,13 @@ footer.show {
     color: #ffffff;
     text-transform: uppercase;
     padding-left: 13px;
+    line-height: .8em;
+    position: relative;
+    top:-4px;
+}
+.footer-logo-text span {
+    font-weight:300;
+    font-size: 12px;
 }
 .footer-menu {
     float: right;
@@ -668,17 +684,19 @@ footer .row .right a img {
     color:#686868;
 }
 .product-overview figure figcaption blockquote {
+    display: inline-block;
     color: #4e4e4e;
-    font-size: 24px;
+    font-size: 22px;
     font-style: italic;
     font-weight: 300;
     position: relative;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem 1rem 2rem;
     left:-2rem;
-    background: url("../img/quote.png") no-repeat top left;
+    background: url("../img/quote.png") no-repeat top left, url("../img/quote2.png") no-repeat bottom right;
+    margin-bottom: 1.2rem;
 }
 .product-overview figure figcaption p {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.2rem;
 }
 .product-overview figure figcaption ul {
     margin-top: 1rem;
@@ -709,6 +727,12 @@ footer .row .right a img {
     font-size: 14px;
     line-height: 1.25em;
     color: #275b4d;
+}
+.product-overview figure figcaption ol.small h4 {
+    padding-left: 1rem;
+    font-weight: normal;
+    color: #275b4d;
+    margin-bottom: 1rem;
 }
 .product-overview figure figcaption ol.small li {
     width: 25%;
@@ -789,7 +813,7 @@ footer .row .right a img {
     display: none;
     text-align: center;
     box-sizing: border-box;
-    padding: 0 20%;
+    padding: 0 15%;
     color: #ffffff;
 }
 .product-teaser a {
@@ -806,7 +830,7 @@ footer .row .right a img {
 }
 .product-teaser h3{
     display: inline-block;
-    font-size: 48px;
+    font-size: 46px;
     padding: 4rem 0 2rem 0;
     position: relative;
     text-transform: uppercase;
@@ -816,7 +840,7 @@ footer .row .right a img {
 .product-teaser p{
     display: inline-block;
     font-weight: 300;
-    padding: 2rem 0 1rem 0;
+    padding: 1.5rem 0 1rem 0;
     position: relative;
     z-index: 1;
 }
@@ -844,6 +868,35 @@ footer .row .right a img {
     width:80%;
     margin: 10%;
 }
+
+.phone {
+    text-align: left;
+}
+.phone>a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #686868;
+}
+.phone>a span {
+    width: 44px;
+    flex-basis: 44px;
+    flex-shrink: 0;
+    height:44px;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+.phone>a:hover span {
+    animation-name: phone;
+    animation-duration: .16s;
+    animation-iteration-count: 4;
+    animation-timing-function: linear;
+}
+.phone>a span img {
+    width:80%;
+    margin: 10%;
+}
+
 @keyframes phone {
     0%,100% {
         transform: rotate(0deg);
@@ -891,6 +944,9 @@ footer .row .right a img {
 }
 .product-overview-columns>div ul li {
     list-style: disc;
+    color: #686868;
+    font-weight: 300;
+    line-height: 1.25em;
 }
 
 .product-overview-columns>section {
@@ -1059,7 +1115,7 @@ footer .row .right a img {
 
 
 .products-testimonial {
-    width: 1300px;
+    width: 1220px;
     margin: 4rem auto;
     position: relative;
     height: 260px;
@@ -1081,16 +1137,17 @@ footer .row .right a img {
     left: 0;
 }
 .products-testimonial ul {
-    width:940px;
+    width:900px;
     position: relative;
     margin: 0 auto;
     height: 100%;
+    background: url("../img/quote-big-1.png") no-repeat 0 10%, url("../img/quote-big-2.png") no-repeat 100% 60%;
 }
 .products-testimonial ul li {
     position: absolute;
     top:0;
     left:0;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     color: #4e4e4e;
     font-style: italic;
@@ -1101,6 +1158,8 @@ footer .row .right a img {
     justify-content: center;
     flex-direction: column;
     line-height: 1.333em;
+    width: 90%;
+    margin-left:5%;
 }
 .products-testimonial ul li span {
     font-weight: 500;
@@ -1216,7 +1275,7 @@ footer .row .right a img {
     display: none;
     position: relative;
 }
-.gallery::after {
+.gallery::after, .gallery::before {
     display: block;
     content: '';
     clear: both;
