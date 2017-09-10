@@ -36,6 +36,11 @@
         });
         $('.slider-navigation li.active').removeClass('active');
         $('.slider-navigation li').eq(activeSlide).addClass('active');
+        if(activeSlide===0) {
+            $('#slide0-bg').fadeIn(400);
+        } else {
+            $('#slide0-bg').fadeOut(400);
+        }
     }
     $('.slider-navigation li').click(function () {
         activeSlide = $(this).index();

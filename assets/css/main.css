@@ -252,14 +252,19 @@ header.dark{
 
 .content {
     position: relative;
-    height:calc(84vh - 120px);
+    height:calc(87vh - 120px);
     display: none;
 }
-#particles-js {
+#particles-js, #slide0-bg {
     position: absolute;
     z-index: 0;
     width: 100%;
     height: 100%;
+}
+#slide0-bg {
+    background: url("../img/slides/slide0.jpg") no-repeat center center;
+    background-size: cover;
+    height: 103%;
 }
 #particles-js canvas {
     height: 100% !important;
@@ -304,6 +309,36 @@ header.dark{
     background-size: 65% !important;
     background-position: left center;
 }
+
+#slider .slides-container figure.slide0 article {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#slider .slides-container figure.slide0 article img {
+    width: 9vw;
+}
+#slider .slides-container figure.slide0 article .stripe {
+    width: 2px;
+    background-color: #ffffff;
+    height: 10vw;
+    box-shadow: rgba(0,0,0,.5) 2px 2px 4px;
+    margin-left: 2rem;
+}
+#slider .slides-container figure.slide0 article .text {
+    width:36vw;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    text-shadow: rgba(0,0,0,.5) 2px 2px 4px;
+    font-size: 1.65vw;
+    line-height: 1.15em;
+    font-weight: 300;
+    color: #ffffff;
+}
+
 #slider .slides-container figure.ani,
 #slider .slides-container figure.ani figcaption *,
 #slider .slides-container figure.ani nav
