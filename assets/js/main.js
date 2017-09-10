@@ -13,7 +13,8 @@
             $('.header-menu').slideDown();
         },2500);
         setTimeout(function () {
-            $('.content, .product-teaser, .product-page footer, .gallery').fadeIn(500);
+            $('.content, .product-teaser, .placeholder, .products-testimonial, .product-page footer, .gallery').fadeIn(500);
+
             particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function() {});
             if($('body').hasClass('homepage')) {
                 slider();

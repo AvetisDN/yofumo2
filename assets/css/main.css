@@ -781,6 +781,7 @@ footer .row .right a img {
     display: flex;
     transition: 500ms ease;
     overflow: hidden;
+    justify-content: center;
 }
 .product-overview-icons::after {
     display: block;
@@ -1148,6 +1149,15 @@ footer .row .right a img {
     margin-bottom:3rem !important;
 }
 
+.placeholder {
+    height: 40vw;
+    background: #c0c4c5  url("../img/placeholder.png") center no-repeat;
+    background-size: contain;
+    display: none;
+}
+#video {
+    background-color: #ffffff;
+}
 
 .products-testimonial {
     width: 1220px;
@@ -1155,6 +1165,7 @@ footer .row .right a img {
     position: relative;
     height: 260px;
     clear: both;
+    display: none;
 }
 .products-testimonial .arrow-prev,
 .products-testimonial .arrow-next {
