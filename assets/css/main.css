@@ -1172,38 +1172,41 @@ footer .row .right a img {
     opacity: 1;
 }
 
-.teaser-page .teaser-main {
-    background-image: url("../img/teaser/teaser-1.jpg");
-}
-.teaser-page.stage1 .content {
+.teaser-page.stage1 .content,
+.teaser-page.stage3 .content  {
     height: 84vh;
 }
 .teaser-main {
     width: 100%;
     position: relative;
     height:100%;
-    background: url("../img/teaser/teaser-3.jpg") bottom center no-repeat;
+    background: url("../img/teaser/teaser-1.jpg") bottom center no-repeat;
     background-size: cover;
 }
 .teaser-text {
     position: absolute;
-    left: 50%;
-    top:70px;
+    right: 5%;
+    top:30px;
     width:40%;
     text-align: right;
     color: #ffffff;
     font-weight: 300;
 }
-.teaser-page.stage3 .teaser-quest {
+.teaser-page.stage3 .teaser-quest,
+.teaser-page.stage3 .teaser-quest-2
+{
     display: none !important;
 }
-.teaser-quest {
+.teaser-quest, .teaser-quest-2 {
     position: absolute;
     left: 50%;
     top:40px;
     width:40%;
     color: #ffffff;
     font-weight: 300;
+}
+.teaser-quest-2 {
+    display: none;
 }
 .teaser-quest>img {
     width: 80%;
@@ -1262,7 +1265,7 @@ footer .row .right a img {
 .teaser-text p {
     float: right;
     width:70%;
-    box-shadow: rgba(0,0,0,0.85) 0 1px 3px;
+    text-shadow: rgba(0,0,0,0.5) 0 1px 3px;
 }
 
 .teaser-overlay {

@@ -81,8 +81,26 @@
     }
 
 
-    $('.clickme, #close').click(function (e) {
+    $('.clickme').click(function (e) {
         e.preventDefault();
+        $('.teaser-main').css({
+            background: 'url("assets/img/teaser/teaser-3.jpg") bottom center no-repeat'
+        });
+        $('.teaser-quest').fadeOut(400);
+        $('.teaser-quest-2').fadeIn(400);
+        setTimeout(function () {
+            $('#close').click();
+        }, 5000);
+    });
+    $('#close').click(function (e) {
+        e.preventDefault();
+        $('.teaser-main').css({
+            background: 'url("assets/img/teaser/teaser-result.jpg") bottom center no-repeat',
+            backgroundSize: 'cover'
+        });
+        $('.content').css({
+            height: .49*$(window).width()
+        });
         $('body').removeClass('stage1').addClass('stage3');
     });
 
