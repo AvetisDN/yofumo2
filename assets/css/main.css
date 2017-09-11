@@ -252,8 +252,9 @@ header.dark{
 
 .content {
     position: relative;
-    height:calc(87vh - 120px);
+    height:calc(83vh);
     display: none;
+    margin-bottom: 4vh;
 }
 #particles-js, #slide0-bg {
     position: absolute;
@@ -302,8 +303,8 @@ header.dark{
     background-position: 0 0;
 }
 #slider .slides-container figure.slide3{
-    background-size: contain !important;
-    background-position: 0 0;
+    background-size: 70% !important;
+    background-position: center left;
 }
 #slider .slides-container figure.slide4{
     background-size: 65% !important;
@@ -381,8 +382,8 @@ header.dark{
     animation-fill-mode: backwards;
 }
 #slider .slides-container figure.slide2 figcaption p {
-    width: 100%;
-    margin-left: 0;
+    width: 88%;
+    margin-left: 12%;
 }
 #slider .slides-container figure.slide3 figcaption p {
     width: 70%;
@@ -571,10 +572,9 @@ footer {
     box-sizing: border-box;
     background-color: #275b4d;
     color: #ffffff;
-    position: fixed;
     width: 100%;
-    bottom:-14vh;
     transition: 300ms ease;
+    display: none;
 }
 footer.show {
     bottom:0;
@@ -874,7 +874,7 @@ footer .row .right a img {
     line-height: 1.333em;
 }
 .product-teaser p{
-    display: inline-block;
+    text-align: center;
     font-weight: 300;
     padding: 1.5rem 0 1rem 0;
     position: relative;
@@ -1154,6 +1154,10 @@ footer .row .right a img {
     background: #c0c4c5  url("../img/placeholder.png") center no-repeat;
     background-size: contain;
     display: none;
+    position: relative;
+}
+.placeholder.higher {
+    height: 100vh;
 }
 #video {
     background-color: #ffffff;
@@ -1220,7 +1224,8 @@ footer .row .right a img {
 
 .teaser-page.stage1 .content,
 .teaser-page.stage3 .content  {
-    height: 84vh;
+    height: 87vh;
+    margin-bottom: 0;
 }
 .teaser-main {
     width: 100%;
@@ -1490,4 +1495,11 @@ footer .row .right a img {
 }
 .gallery .detailed-footer .social a:hover {
     background-color: #275b4d;
+}
+.sketchfab-embed-wrapper {
+    height: 100%;
+}
+#sketchfab-block {
+    height: 100%;
+    width: 100%;
 }
