@@ -154,5 +154,19 @@
         }
     }
 
+    function returnFalse() {
+        return false;
+    }
+
+    if($('.sketchfab-page')) {
+        $(window).scroll(function () {
+            console.log($(this).scrollTop() + ":" + $('#sketchfab-block').offset().top);
+            if ($(this).scrollTop() > $('#sketchfab-block').offset().top - 40 && $(this).scrollTop() < $('#sketchfab-block').offset().top + 40){
+                $('.overlayed').fadeOut();
+            } else {
+                $('.overlayed').fadeIn();
+            }
+        });
+    }
 
 })();
