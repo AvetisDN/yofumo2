@@ -1521,8 +1521,12 @@ footer .row .right a img {
 .sketchfab-embed-wrapper {
     height: 100%;
 }
-#sketchfab-block {
+#sketchfab-block2 {
     height: 100%;
+    width: 100%;
+}
+#sketchfab-block2 {
+    height: 95%;
     width: 100%;
 }
 .sketch-fab-holder {
