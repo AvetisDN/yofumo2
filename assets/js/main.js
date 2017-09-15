@@ -86,18 +86,15 @@
         $('.teaser-quest-2').fadeIn(400);
         setTimeout(function () {
             $('#close').click();
-        }, 5000);
+        }, 2000);
     });
     $('#close').click(function (e) {
         e.preventDefault();
-        $('.teaser-main').css({
-            background: 'url("assets/img/teaser/teaser-result.jpg") bottom center no-repeat',
-            backgroundSize: 'cover'
-        });
+        $('.teaser-main-3').fadeIn(400);
         $('header .logo-img img').attr('src','assets/svg/logo-icon.svg');
-        $('.content').css({
+        $('.content').animate({
             height: .49*$(window).width()
-        });
+        }, 500);
         $('body').removeClass('stage1').addClass('stage3');
     });
 
@@ -110,6 +107,7 @@
     $('.gallery>article>a').click(function (e) {
         e.preventDefault();
         $('.detailed-view').fadeIn(500);
+        $('.big-picture-showcase').css({backgroundImage:'url('+$(this).attr('href')+')'});
     });
     $('#close2').click(function (e) {
         e.preventDefault();
@@ -139,8 +137,11 @@
         function changePic(){
             $('.small-picture a').removeClass('active');
             $('.small-picture a').eq(galActive).addClass('active');
-            $('.big-picture-showcase').css({
-                backgroundImage: "url('"+$('.small-picture a').eq(galActive).attr('href')+"')"
+            $('.fader').fadeIn(200, function(){
+                $('.big-picture-showcase').css({
+                    backgroundImage: "url('"+$('.small-picture a').eq(galActive).attr('href')+"')"
+                });
+                $('.fader').fadeOut(200);
             });
         }
     }
@@ -149,7 +150,7 @@
         return false;
     }
 
-    if($('.sketchfab-page')) {
+    /*if($('.sketchfab-page').length>0) {
         $(window).scroll(function () {
             console.log($(this).scrollTop() + ":" + $('#sketchfab-block').offset().top);
             if ($(this).scrollTop() > $('#sketchfab-block').offset().top - 40 && $(this).scrollTop() < $('#sketchfab-block').offset().top + 40){
@@ -158,6 +159,6 @@
                 $('.overlayed').fadeIn();
             }
         });
-    }
+    }*/
 
 })();

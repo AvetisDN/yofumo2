@@ -61,7 +61,8 @@ header {
     height: 13vh;
     padding-top: 4vh !important;
     box-sizing: border-box !important;
-    transition: background-color 300ms ease;
+    transition: 300ms ease;
+    background-color: transparent;
 }
 .teaser-page.stage1 header {
     background-color: #275b4d;
@@ -786,7 +787,7 @@ footer .row .right a img {
     margin-bottom: 1rem;
 }
 .product-overview figure figcaption ol.small li {
-    width: 25%;
+    width: 20%;
     text-align: center;
 }
 .product-overview figure figcaption ol li img {
@@ -1298,6 +1299,16 @@ footer .row .right a img {
     background-size: cover;
     display: none;
 }
+.teaser-main-3 {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/teaser/teaser-result.jpg") bottom center no-repeat;
+    background-size: cover;
+    display: none;
+}
 .teaser-text {
     position: absolute;
     right: 5%;
@@ -1425,13 +1436,14 @@ footer .row .right a img {
     height: 100%;
 }
 .gallery .detailed-view {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top:0;
     left: 0;
     background-color: #f3f3f3;
     display: none;
+    z-index: 10000;
 }
 .gallery .detailed-view .detailed-header {
     height: 100px;
@@ -1478,12 +1490,20 @@ footer .row .right a img {
     background: url("../img/gal-prev.png") center center no-repeat;
 }
 .gallery .detailed-view .big-picture .big-picture-showcase {
-    height: 100%;
-    width: calc(100% - 90px);
-    margin: 0 auto;
+    height: 90%;
+    width: calc(100% - 110px);
+    margin: 0 auto 0 auto;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    transform: translateY(4vh);
+}
+.gallery .detailed-view .big-picture .big-picture-showcase .fader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: none;
 }
 .gallery .detailed-footer {
     position: relative;
@@ -1507,6 +1527,7 @@ footer .row .right a img {
     position: relative;
     float: left;
     margin-right: 5px;
+    transition: 500ms ease;
 }
 .gallery .detailed-footer .small-picture a img {
     max-height: 100%;
