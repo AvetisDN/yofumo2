@@ -170,11 +170,11 @@ header {
     margin-left: 4vw;
 }
 header.dark{
-    background-color: #353535;
+    background-color: #252525;
 }
 .header-menu li>ul {
     position: absolute;
-    background-color: #353535;
+    background-color: #252525;
     width: 100%;
     height: 0;
     overflow: hidden;
