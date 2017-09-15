@@ -1638,3 +1638,69 @@ footer .row .right a img {
     display: inline-block;
     font-weight: 500;
 }
+
+
+.press {
+    max-width: 1600px;
+    width: 83.333%;
+    margin: 1rem auto;
+}
+.press::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.press article {
+    width: calc(25% - 2px);
+    height: 420px;
+    box-sizing: border-box;
+    float: left;
+    padding: 1.5rem 1.1rem;
+    transition: 300ms ease;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0);
+    color: #5d5d5d;
+}
+.press article:hover {
+    border: 1px solid #5d5d5d;
+    box-shadow: rgba(39,91,77,.35) 3px 4px 8px;
+}
+.press article:hover * {
+    opacity: 1;
+    cursor: default;
+}
+.press article img {
+    width: 100%;
+}
+.press article .press-date {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    padding: .7rem 0;
+    border-bottom: 1px solid #5d5d5d;
+    opacity: .3;
+}
+.press article p {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 1rem 0;
+    opacity: .3;
+    transition: 300ms ease;
+}
+.press article a {
+    color: #275b4d;
+    cursor: pointer !important;
+}
+.press article a::after {
+    font-family: 'FontAwesome';
+    content:"\f04b";
+    font-size: .6667rem;
+    display: inline-block;
+    position: relative;
+    left: 8px;
+    top:-1px;
+}
+.press article a:hover::after {
+    left: 14px;
+    transition: 200ms ease;
+}
