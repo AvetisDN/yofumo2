@@ -1,6 +1,6 @@
 ;(function () {
 
-    $(document).ready(function () {
+    /*$(document).ready(function () {
         setTimeout(function () {
             $('.logo-img, .logo-img2').addClass('hide');
         }, 2000);
@@ -19,9 +19,13 @@
             particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function () {
             });
         }, 3000);
+    });*/
+
+    particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function () {
     });
 
     var activeSlide = 0;
+    slider();
 
     function slider() {
         $('#slider figure.ani').removeClass('ani').fadeOut(300);
