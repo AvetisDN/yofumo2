@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import "fontello.css";
+@import "fontello-codes.css";
 body, html {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
@@ -261,6 +263,9 @@ header.dark{
     top:2px;
     left: 3px;
 }
+header.dark a {
+    color: #999 !important;
+}
 
 .content {
     position: relative;
@@ -296,7 +301,7 @@ header.dark{
     width: 100%;
 }
 #slider .slides-container figure {
-    /*display: none;*/
+    display: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -494,13 +499,21 @@ header.dark{
     justify-content: flex-end;
 }
 #slider .slider-navigation li {
-    width:10px;
-    height: 10px;
-    border-radius: 5px;
+    width:14px;
+    height: 14px;
+    border-radius: 7px;
     margin: 7px auto;
     background-color: #686868;
     transition: 200ms ease;
     cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+}
+#slider .slider-navigation li img {
+    height: 11px;
+    position: relative;
+    top:-5px;
+    left: 2px;
 }
 #slider .slider-navigation li.active,
 #slider .slider-navigation li:hover {
@@ -1879,6 +1892,9 @@ footer .row .right a img {
 .no-quotes {
     background: none !important;
     font-weight: 500 !important;
+    font-style: normal !important;
+    width: 100% !important;
+    font-size: 20px !important;
 }
 #section-map {
     width: 100%;
