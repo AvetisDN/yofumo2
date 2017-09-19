@@ -310,6 +310,10 @@ header.dark{
     animation-timing-function: ease;
     animation-fill-mode: backwards;
 }
+#slider .slides-container figure.slide1{
+    background-size: 85% !important;
+    background-position: 0 70%;
+}
 #slider .slides-container figure.slide2{
     background-size: contain !important;
     background-position: 0 0;
@@ -380,8 +384,8 @@ header.dark{
     line-height: 1em;
 }
 #slider .slides-container figure figcaption p {
-    width: 50%;
-    margin-left: 50%;
+    width: 70%;
+    margin-left: 30%;
     color: #686868;
     font-size: 16px;
     margin-top: 1rem;
@@ -410,6 +414,7 @@ header.dark{
     height: 30px;
     bottom:0;
     width: 100%;
+    z-index: 9999;
     border-bottom: 2px solid #275b4d;
     animation-name: nav;
     animation-delay: 1000ms;
@@ -422,7 +427,7 @@ header.dark{
     display: block;
     position: absolute;
     color:#1a1a1a;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
@@ -434,16 +439,16 @@ header.dark{
     color: #09ad95;
 }
 #slider .slides-container figure nav>a:first-child{
-    left:8%;
+    left:6%;
 }
 #slider .slides-container figure nav>a:nth-child(2){
-    left:37%;
+    left:33%;
 }
 #slider .slides-container figure nav>a:nth-child(3){
-    left:60%;
+    left:55%;
 }
 #slider .slides-container figure nav>a:last-child{
-    left:80%;
+    left:75%;
 }
 @keyframes figure {
     0% {
@@ -1868,4 +1873,18 @@ footer .row .right a img {
 .about>p {
     position: relative;
     z-index:9999;
+}
+
+/**/
+.no-quotes {
+    background: none !important;
+    font-weight: 500 !important;
+}
+#section-map {
+    width: 100%;
+    height: 400px;
+}
+#map {
+    width: 100%;
+    height: 100%;
 }

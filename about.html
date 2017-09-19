@@ -60,15 +60,15 @@
                             </a>
                         </li>
                         <li>
-                            <a href="terpenes.html">
+                            <a href="terpenes-enfleurage.html" >
                                 <img src="assets/svg/menu/terp1.svg">
-                                <span>Terpenes Management</span>
+                                <span>Terpenes<br>Management</span>
                             </a>
                         </li>
                         <li>
-                            <a href="terpenes-enfleurage.html">
+                            <a href="terpenes.html" >
                                 <img src="assets/svg/menu/terp2.svg">
-                                <span>Yofumo Enfleurage</span>
+                                <span>Yofumo<br>Enfleurage</span>
                             </a>
                         </li>
                     </ul>
@@ -92,7 +92,7 @@
     <section class="about">
         <div id="particles-js"></div>
 
-        <div class="about-header">
+        <!--<div class="about-header">
             <h2>About Yofumo </h2>
             <div class="about-header-col-1-2">
                 <p>In addition to our growing library of natural, in house developed flavors and aromas,
@@ -118,7 +118,7 @@
                     other vectors currently under development.
                 </p>
             </div>
-        </div>
+        </div>-->
         <div class="about-body">
             <h2>Yofumo Founding Team</h2>
 
@@ -206,7 +206,28 @@
 
     </section>
 
-    <section class="press">
+    <div id="section-map">
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var yofumo = {lat: 39.713288, lng: -105.007457};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: yofumo,
+                    scrollwheel: false
+                });
+                var marker = new google.maps.Marker({
+                    position: yofumo,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb9SN1tTTKMhmbuqCIe9vi21OuPjiIpQE&callback=initMap">
+        </script>
+    </div>
+
+    <!--<section class="press">
 
         <h2>Last publications</h2>
 
@@ -265,7 +286,7 @@
             </a>
         </p>
     </div>
-
+-->
     <footer>
         <div class="row">
             <a href="index.html" class="footer-logo-img">
