@@ -153,15 +153,6 @@
                 </div>
                 <div class="about-team">
                     <div class="about-team-img">
-                        <img src="assets/img/team/javier.jpg">
-                    </div>
-                    <h4>CIO,<br>Co-Founder</h4>
-                    <h5>Javier Derderian</h5>
-                    <p>Master Coder & App
-                        Development Leader</p>
-                </div>
-                <div class="about-team">
-                    <div class="about-team-img">
                         <img src="assets/img/team/victor.jpg">
                     </div>
                     <h4>CMO,<br>Co-Founder</h4>
@@ -169,6 +160,15 @@
                     <p>Sara Lee Europe, AkzoNobel
                         Coatings, NutrexpaEU,
                         VC Advisors</p>
+                </div>
+                <div class="about-team">
+                    <div class="about-team-img">
+                        <img src="assets/img/team/javier.jpg">
+                    </div>
+                    <h4>CIO,<br>Co-Founder</h4>
+                    <h5>Javier Derderian</h5>
+                    <p>Master Coder & App
+                        Development Leader</p>
                 </div>
 
             </div>
@@ -205,29 +205,7 @@
         </div>
 
     </section>
-
-    <div id="section-map">
-        <div id="map"></div>
-        <script>
-            function initMap() {
-                var yofumo = {lat: 39.713288, lng: -105.007457};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 15,
-                    center: yofumo,
-                    scrollwheel: false
-                });
-                var marker = new google.maps.Marker({
-                    position: yofumo,
-                    map: map
-                });
-            }
-        </script>
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb9SN1tTTKMhmbuqCIe9vi21OuPjiIpQE&callback=initMap">
-        </script>
-    </div>
-    <div style="clear: both;"></div>
-    <section class="press" style="margin-top: 5rem">
+    <section class="press">
 
         <h2>Last publications</h2>
 
@@ -271,11 +249,35 @@
                 information overload...</p>
             <a href="http://www.sfweekly.com/news/chemtales/a-better-taste-of-your-own-medicine/" target="_blank" class="press-read-more">Read more</a>
         </article>
+        <div style="text-align: center; clear: both;">
+            <a href="press.html" class="btn btn-no-ani">More News</a>
+        </div>
 
     </section>
 
+    <div id="section-map">
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var yofumo = {lat: 39.713288, lng: -105.007457};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: yofumo,
+                    scrollwheel: false
+                });
+                var marker = new google.maps.Marker({
+                    position: yofumo,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb9SN1tTTKMhmbuqCIe9vi21OuPjiIpQE&callback=initMap">
+        </script>
+    </div>
+    <div style="clear: both;"></div>
+
     <div class="product-teaser" style="background-image: url('assets/img/about-bg.jpg')">
-        <div class="product-teaser-overlay"></div>
         <h3>The future for your grow is one call away</h3>
         <p>From the moment a flower comes off the stalk, Yofumo refines all aspects of post-harvest drying, curing, transportation, specialty processing,
             and long and short-term storage. Drying and curing times can be accelerated by up to 300%, while producing a higher quality product.
