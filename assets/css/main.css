@@ -1808,7 +1808,7 @@ footer .row .right a img {
     margin: 3rem auto;
     padding:1.5rem 1rem;
     position: relative;
-    z-index: 9999;
+    z-index: 997;
 }
 .about-body h2, .press h2 {
     text-transform: uppercase;
