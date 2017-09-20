@@ -651,6 +651,23 @@ footer.show {
 .footer-menu li {
     float: left;
     margin-left: 2vw;
+    position: relative;
+}
+.footer-menu li>ul {
+    display: none;
+    background-color: #275b4d;
+    position: absolute;
+    bottom: 25px;
+    left: -65%;
+    width: 250%;
+    padding: 1rem 0;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+.footer-menu li>ul li {
+    display: block;
+    float: none;
+    margin-bottom: .5rem;
 }
 .footer-menu li a {
     display: block;
@@ -671,6 +688,21 @@ footer.show {
     background-color: #578c7f;
     transition: 200ms ease;
     transform: scaleX(0);
+}
+.footer-menu li ul li a::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width:80%;
+    margin-left: 0;
+    margin-top: -2px;
+    height: 2px;
+    background-color: #578c7f;
+    transition: 200ms ease;
+    transform: scaleX(0);
+}
+.footer-menu li:hover ul {
+    display: block;
 }
 .footer-menu li a:hover::after,
 .footer-menu li a.current::after  {
