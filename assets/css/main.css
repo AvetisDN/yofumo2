@@ -977,13 +977,17 @@ footer .row .right a img {
     border-radius: 50%;
     background-color: #ffffff;
     margin-right: 1rem;
+    animation-name: phone;
+    animation-duration: .16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-.product-teaser p>a:hover span {
+/*.product-teaser p>a:hover span {
     animation-name: phone;
     animation-duration: .16s;
     animation-iteration-count: 4;
     animation-timing-function: linear;
-}
+}*/
 .product-teaser p>a span img {
     width:80%;
     margin: 10%;
@@ -1938,4 +1942,8 @@ footer .row .right a img {
 }
 .btn-no-ani {
     animation: none !important;
+}
+
+.download-pdf img {
+    max-width: 200px;
 }
