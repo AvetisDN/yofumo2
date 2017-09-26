@@ -40,8 +40,10 @@
         $('.slider-navigation li').eq(activeSlide).addClass('active');
         if (activeSlide === 0) {
             $('#slide0-bg').fadeIn(400);
+            $('#slider .slider-navigation').removeClass('dark');
         } else {
             $('#slide0-bg').fadeOut(400);
+            $('#slider .slider-navigation').addClass('dark');
         }
     }
 

@@ -505,6 +505,23 @@ header.dark a {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+
+}
+#slider .slider-navigation::after {
+    display: block;
+    content: '';
+    height:60px;
+    width: 47px;
+    background: url("../img/hand1.png") no-repeat;
+    background-size: contain;
+}
+#slider .slider-navigation.dark::after {
+    display: block;
+    content: '';
+    height:60px;
+    width: 47px;
+    background: url("../img/hand2.png") no-repeat;
+    background-size: contain;
 }
 #slider .slider-navigation li {
     width:20px;
