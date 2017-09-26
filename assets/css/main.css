@@ -471,6 +471,14 @@ header.dark a {
         transform: translateX(0);
     }
 }
+@keyframes figcaption2 {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 @keyframes nav {
     0% {
         transform: translateY(50px);
@@ -503,21 +511,18 @@ header.dark a {
     height: 20px;
     border-radius: 10px;
     margin: 7px auto;
-    background-color: #686868;
+    background-color: rgba(255,255,255,.6);
     transition: 200ms ease;
     cursor: pointer;
-    color: #fff;
+    color: #275b4d;
     font-size: 12px;
-}
-#slider .slider-navigation li img {
-    height: 14px;
-    position: relative;
-    top:2px;
-    left: 3px;
+    text-align: center;
+    box-shadow: rgba(45,75,65,.5) 0 1px 4px;
 }
 #slider .slider-navigation li.active,
 #slider .slider-navigation li:hover {
     background-color: #275b4d;
+    color: #ffffff;
 }
 .label {
     display: inline-block;
@@ -1946,4 +1951,63 @@ footer .row .right a img {
 
 .download-pdf img {
     max-width: 200px;
+}
+
+/*-*/
+#slider .slides-container figure.slide5 {
+
+}
+#slider .slides-container figure.slide5 figcaption {
+    width: 50%;
+}
+#slider .slides-container figure.slide5 figcaption.fig-left {
+    left: 0;
+    right:50%;
+    text-align: left !important;
+}
+#slider .slides-container figure.slide5 figcaption div.slide-small-bg {
+    height: 50%;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#slider .slides-container figure.slide5 figcaption div.slide-small-bg {
+    height: 50%;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+#slider .slides-container figure.slide5 figcaption.fig-left div.slide-small-bg {
+    height: 50%;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+#slider .slides-container figure.slide5>figcaption.fig-left * {
+    text-align: left !important;
+    margin-left: 0 !important;
+    left:0 !important;
+    right:auto !important;
+    animation-name: figcaption2 !important;
+}
+#slider .slides-container figure.slide5 figcaption h2 {
+    font-size: 72px;
+    margin-bottom: 0;
+    margin-top: 35px;
+}
+#slider .slides-container figure.slide5 figcaption .label {
+    position: relative;
+    top:30px;
+}
+#slider .slides-container figure.slide5 figcaption p {
+    width:90%;
+    margin: 10px 0;
+    margin-left: 10%;
+}
+#slider .slides-container figure.slide5 figcaption.fig-left p {
+    margin-left: 0;
+}
+#slider .slides-container figure.slide5 figcaption .btn {
+    position: relative;
+    top:-20px;
 }
