@@ -2,7 +2,7 @@
 @import "fontello.css";
 @import "fontello-codes.css";
 body, html {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
     color: #1a1a1a;
     line-height: 1.3333rem;
@@ -851,6 +851,7 @@ footer .row .right a img {
 .product-overview figure figcaption ol {
     border-left: 2px solid #275b4d;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .product-overview figure figcaption ol::after {
     display: block;
@@ -885,12 +886,12 @@ footer .row .right a img {
     transition: 500ms ease;
     overflow: hidden;
     justify-content: center;
-}
+}/*
 .product-overview-icons::after {
     display: block;
     content: '';
     clear: both;
-}
+}*/
 .product-overview-icons>div {
     flex-basis: 33.3333%;
     box-sizing: border-box;
@@ -900,9 +901,16 @@ footer .row .right a img {
     align-items: center;
     justify-content: center;
 }
+.product-overview-icons.small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
 .product-overview-icons.small>div {
     flex-direction: column;
-    flex-basis: 11.1111%;
+    flex-basis: 12%;
     flex-shrink: 0;
     padding: 1rem 0;
     justify-content: flex-start;
@@ -916,7 +924,6 @@ footer .row .right a img {
     flex-basis: 10%;
 }
 #icons-quick {
-    height: 0;
 }
 .product-overview-icons.small>div p>span {
     text-transform: none;
@@ -2027,4 +2034,122 @@ footer .row .right a img {
 #slider .slides-container figure.slide5 figcaption .btn {
     position: relative;
     top:-20px;
+}
+sup {
+    font-size:.3em;
+    position: relative;
+    top:-1.5em;
+}
+.product-overview figure figcaption .overview-li {
+    margin-bottom: 1rem;
+    list-style-type: disc !important;
+    padding-left: 1rem;
+}
+.product-overview figure figcaption .overview-li li {
+    color: #1f1f1f;
+    list-style-type: disc !important;
+}
+
+
+.product-overview-icon-switcher-static::before {
+    display: block;
+    content: '';
+    clear: both;
+}
+.product-overview-icon-switcher-static {
+    width: 390px;
+    height:75px;
+    border: 2px solid #686868;
+    border-radius: 38px;
+    box-sizing: border-box;
+    padding: 7px;
+    margin: 7rem auto 2rem auto;
+    position: relative;
+    font-size: 0;
+    text-align: center;
+}
+.product-overview-icon-switcher-static span {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    color: #a4a4a4;
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 56px;
+}
+
+/*full specs*/
+.product-overview-full-tech {
+    width: 70%;
+    margin: 4rem auto;
+}
+.product-overview-full-tech h4 {
+    font-size:1.5rem;
+    text-transform: uppercase;
+    color: #a4a4a4;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.product-overview-full-tech h4 a {
+    color: #275b4d;
+    display: inline-block;
+    position: relative;
+}
+.product-overview-full-tech h4 a span {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    top:100%;
+    left: 0;
+    text-align: center;
+}
+.product-overview-full-tech::after,
+.product-overview-full-tech-lists::after,
+.product-overview-full-tech-lists>ul>li::after
+{
+    display: block;
+    content: '';
+    clear: both;
+}
+.product-overview-full-tech-lists {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    height: 0;
+    transition: 500ms ease;
+}
+.product-overview-full-tech-lists.shown {
+    height: auto;
+}
+.product-overview-full-tech-lists>ul {
+    flex-basis:50%;
+    display: flex;
+    flex-direction: column;
+}
+.product-overview-full-tech-lists>ul>li {
+    flex-basis: 25%;
+    float: none;
+    width: 100%;
+    color: #686868;
+    margin: 1rem 0 2rem 0;
+}
+.product-overview-full-tech ul li h5,
+.product-overview-full-tech ul li ul {
+    width:40%;
+    float: left;
+    box-sizing: border-box;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.product-overview-full-tech ul li ul {
+    width:60%;
+    border-left: 1px solid #686868;
+    padding-left: 3rem;
+    list-style-type: disc;
+    font-weight: 300;
+}
+.product-overview-full-tech ul li ul li.no-caps {
+    text-transform: none;
 }

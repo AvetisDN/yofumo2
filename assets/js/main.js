@@ -75,6 +75,11 @@
         }
     });
 
+    $('.view-full').click(function (e) {
+        e.preventDefault();
+        $('.product-overview-full-tech-lists').toggleClass('shown');
+    });
+
     var testimonial = 0;
     $('.products-testimonial a.arrow-prev').click(function (e) {
         e.preventDefault();
