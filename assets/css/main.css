@@ -506,7 +506,7 @@ header.dark a {
     align-items: flex-end;
     justify-content: flex-end;
 
-}
+}/*
 #slider .slider-navigation::after {
     display: block;
     content: '';
@@ -514,7 +514,7 @@ header.dark a {
     width: 47px;
     background: url("../img/hand1.png") no-repeat;
     background-size: contain;
-}
+}*/
 #slider .slider-navigation.dark::after {
     display: block;
     content: '';
@@ -2127,6 +2127,9 @@ sup {
     flex-basis:50%;
     display: flex;
     flex-direction: column;
+}
+.product-overview-full-tech-lists>ul {
+    margin-right: 2rem;
 }
 .product-overview-full-tech-lists>ul>li {
     flex-basis: 25%;
