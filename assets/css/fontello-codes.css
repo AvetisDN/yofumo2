@@ -1,4 +1,5 @@
 
+.icon-dot:before { content: '\e800'; } /* '' */
 .icon-logo-icon:before { content: '\e812'; } /* '' */
 .icon-logo-icon-bold:before { content: '\e813'; } /* '' */
 .icon-angle-left:before { content: '\f104'; } /* '' */

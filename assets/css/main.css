@@ -2052,11 +2052,21 @@ sup {
 .product-overview figure figcaption .overview-li {
     margin-bottom: 1rem;
     list-style-type: disc !important;
-    padding-left: 1rem;
+    padding-left: 1.25rem;
 }
 .product-overview figure figcaption .overview-li li {
     color: #1f1f1f;
     list-style-type: disc !important;
+    display: block;
+    line-height: 1.3333rem;
+}
+.product-overview figure figcaption .overview-li li::before {
+    display: inline-block;
+    content: '\e800';
+    font-family: 'fontello';
+    margin-right: .4rem;
+    font-size: 1.2em;
+    line-height: 1.3333rem;
 }
 
 
