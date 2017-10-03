@@ -988,10 +988,20 @@ footer .row .right a img {
 }
 .product-teaser h3{
     display: inline-block;
-    font-size: 46px;
+    font-size: 42px;
     padding: 4rem 0 2rem 0;
     position: relative;
     text-transform: uppercase;
+    z-index: 1;
+    line-height: 1.333em;
+}
+.product-teaser h3.smaller{
+    display: inline-block;
+    font-size: 24px;
+    padding: 11rem 0 2rem 0;
+    position: relative;
+    font-weight: 400;
+    text-transform: none;
     z-index: 1;
     line-height: 1.333em;
 }
@@ -1862,7 +1872,7 @@ footer .row .right a img {
     margin-left: -15%;
 }
 .about-header {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 3rem 1rem;
     border-bottom: 2px solid #275b4d;
     position: relative;
     z-index: 9999;
@@ -1878,6 +1888,10 @@ footer .row .right a img {
     margin-bottom: 2rem;
     font-weight: 400;
     line-height: 1em;
+}
+.about h3 {
+    color: #275b4d;
+    font-weight: 500;
 }
 .about p {
     color: #58595b;
