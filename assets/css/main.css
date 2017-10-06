@@ -803,6 +803,7 @@ footer .row .right a img {
     color: #1f1f1f;
     font-weight: 300;
     margin-top: 1rem;
+    line-height: 1.25em;
 }
 .product-overview figure figcaption h2 {
     font-size: 48px;
@@ -820,6 +821,12 @@ footer .row .right a img {
     font-size: 30px;
     margin-bottom: 1rem;
     color:#686868;
+}
+.product-overview figure figcaption h4 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color:#275b4d;
+    font-weight: 500;
 }
 .product-overview figure figcaption blockquote {
     display: inline-block;
@@ -2188,4 +2195,15 @@ sup {
 }
 .product-overview-full-tech ul li ul li.no-caps {
     text-transform: none;
+}
+
+.small-margin {
+    margin-top: 0 !important;
+}
+.visible {
+    display: flex !important;
+    height: auto;
+}
+.product-overview-icon-switcher-static-2 {
+    width: 480px;
 }
