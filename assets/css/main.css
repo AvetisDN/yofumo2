@@ -2320,7 +2320,7 @@ sup {
     left: -31px;
 }
 .range-graph ul {
-    width:45%;
+    width:48%;
     position: absolute;
     right:0;
 }
@@ -2358,7 +2358,7 @@ sup {
     height:350px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 11%;
+    margin-right: 8%;
 }
 .range-descr-txt {
     float: left;
