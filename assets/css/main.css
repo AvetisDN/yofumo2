@@ -1990,6 +1990,7 @@ footer .row .right a img {
     font-style: normal !important;
     width: 100% !important;
     font-size: 20px !important;
+    color: #275b4d !important;
 }
 #section-map {
     width: 100%;
@@ -2206,4 +2207,181 @@ sup {
 }
 .product-overview-icon-switcher-static-2 {
     width: 480px;
+}
+
+.product-overview-descr-col {
+    width: 85%;
+    margin: 3rem auto;
+}
+.product-overview-descr-col>div {
+    width:43%;
+    float: left;
+}
+.product-overview-descr-col>div:last-child {
+    float: right;
+}
+.product-overview-descr-col::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+.product-overview-descr-col p {
+    color: #58595b;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    line-height: 1.25em;
+}
+.product-overview-descr-col+h6 {
+    clear: both;
+    margin: 1.5rem auto;
+    color: #4e4e4e;
+    font-weight:300;
+    padding-left: 45px;
+    position: relative;
+    height: 45px;
+    width: 85%;
+    padding-right: 50%;
+    box-sizing: border-box;
+    font-size: 1.15rem;
+    line-height: 1.25em;
+}
+.product-overview-descr-col+h6::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width:14px;
+    height: 45px;
+    top:0;
+    left: 0;
+    background-color: #275b4d;
+    font-size: 1.15rem;
+    line-height: 1.25em;
+}
+.height2 {
+    clear: both;
+    height: 2rem;
+}
+.logo-stripe {
+    position: relative;
+}
+.logo-stripe img {
+    width: 5%;
+    margin: 0 3.5%;
+    display: block;
+    float: left;
+}
+.logo-stripe::before,
+.logo-stripe::after{
+    display: block;
+    content: '';
+    width: 44%;
+    float: left;
+    height:2px;
+    background-color: #275b4d;
+    position: relative;
+    top:33px;
+}
+
+/**/
+.product-overview-range {
+    margin-bottom:4rem;
+}
+.product-overview-range * {
+    line-height: 1.25em;
+}
+.product-overview-range h2 {
+    font-weight: 500;
+    font-size:46px;
+    color: #275b4d;
+    text-transform: uppercase;
+}
+.product-overview-range h3 {
+    font-weight: 400;
+    font-size:24px;
+    color: #58595b;
+    text-transform: uppercase;
+}
+.range-graph {
+    height: 2px;
+    background-color: #275b4d;
+    margin: 1rem 0 5rem 0;
+    position: relative;
+}
+.range-graph::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-color: #275b4d;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    top:-15px;
+    left: -31px;
+}
+.range-graph ul {
+    width:45%;
+    position: absolute;
+    right:0;
+}
+.range-graph ul li {
+    float: left;
+    width:33%;
+    text-align: center;
+    font-size: 18px;
+    color: #58595b;
+    font-weight: 400;
+    padding: 1.5rem 0;
+    position: relative;
+    line-height: .75em;
+}
+.range-graph ul li::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-color: #275b4d;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top:-9px;
+    left: 50%;
+    margin-left: -10px;
+}
+.range-descr::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.range-descr-img {
+    float: left;
+    width:50%;
+    height:350px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 11%;
+}
+.range-descr-txt {
+    float: left;
+    width:39%;
+    padding-top: 3rem;
+    color: #1f1f1f;
+    font-size: 1.15rem;
+}
+.range-descr-txt p {
+    margin-bottom: 2rem;
+}
+.range-descr-txt .marked {
+    position: relative;
+    padding-left: 2rem;
+    line-height: 2rem;
+}
+.range-descr-txt .marked::before{
+    display: block;
+    content: '';
+    position: absolute;
+    width:1rem;
+    height: 2rem;
+    background-color: #275b4d;
+    top:0;
+    left:0;
 }
