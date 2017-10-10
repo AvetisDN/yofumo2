@@ -37,8 +37,8 @@ var picker = {
         }
     },
     markers: {
-        outerSize: 50, // the outer diameter of a marker
-        innerSize: 44, // the inner diameter of a marker
+        outerSize: 55, // the outer diameter of a marker
+        innerSize: 50, // the inner diameter of a marker
         list: [], // the list of markers and the position
         selected: 0, // the selected markers
         draw: function() { // draws the markers in the above list onto the canvas
@@ -162,7 +162,7 @@ var picker = {
         }
 
         // update samples
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 4; i++) {
             $('.samples > div[data-sample="'+i+'"] .sample').css('background-color', picker.colors.list[i].str);
             $('.samples > div[data-sample="'+i+'"] .rgb.r').val(picker.colors.list[i].r);
             $('.samples > div[data-sample="'+i+'"] .rgb.g').val(picker.colors.list[i].g);
@@ -204,11 +204,11 @@ var picker = {
             } else if (i == 4) {
                 basePoint = picker.calc.rotate(point, picker.calc.degToRad(-30));
             }
-            picker.markers.list[0] = basePoint;
-            picker.markers.list[1] = picker.calc.rotate(basePoint, picker.calc.degToRad(-15));
-            picker.markers.list[2] = picker.calc.rotate(basePoint, picker.calc.degToRad(15));
-            picker.markers.list[3] = picker.calc.rotate(basePoint, picker.calc.degToRad(-30));
-            picker.markers.list[4] = picker.calc.rotate(basePoint, picker.calc.degToRad(30));
+            picker.markers.list[0] = picker.calc.rotate(basePoint, picker.calc.degToRad(-90));
+            picker.markers.list[1] = picker.calc.rotate(basePoint, picker.calc.degToRad(-45));
+            picker.markers.list[2] = picker.calc.rotate(basePoint, picker.calc.degToRad(0));
+            picker.markers.list[3] = picker.calc.rotate(basePoint, picker.calc.degToRad(90));
+            // picker.markers.list[4] = picker.calc.rotate(basePoint, picker.calc.degToRad(30));
         },
         monochromatic: function(point, i) {
             picker.markers.list = [];
@@ -481,6 +481,8 @@ var picker = {
         }
     }
 };
+$(picker.load); // load the picker
+
 $('#rules li').click(function() { // changing rule
     var $clicked = $(this);
     var $active = $('#rules li.active');
@@ -506,9 +508,9 @@ $('.samples .col').click(function() { // change the selected marker
         picker.markers.draw();
     }
 });
-setTimeout(function () {
+/*setTimeout(function () {
     $('#rules li:last').click();
-}, 1000);
+},100);*/
 
 $('.samples .rgb').change(function(e) { // input an RGB
     var $rgb = $(this);
@@ -543,6 +545,3 @@ $('.samples .hex').change(function(e) { // input a HEX
     }
     picker.fromColor(rgb, sample); // re-calculate from color
 });
-
-
-$(picker.load); // load the picker
