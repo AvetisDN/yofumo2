@@ -111,3 +111,86 @@
 .magic-wheel-headers>div.purple-mark h3 {
     color: #7864ac;
 }
+
+
+/* rule box */
+.rule-box {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #444;
+}
+.rule-box h4 {
+    color: #BBB;
+    font-size: 14pt;
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+}
+#rules {
+    color: #AAA;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+#rules li {
+    cursor: pointer;
+    margin: 10px;
+}
+#rules li:hover {
+    color: #DDD;
+}
+#rules li.active, #rules li.active:hover {
+    color: #EEE;
+}
+/* picker canvas */
+.canvas {
+    text-align: center;
+}
+/* samples */
+.samples {
+    text-align: center;
+}
+.samples .col {
+    width: 225px;
+    display: inline-block;
+    color: #CBCBCB;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #555;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    margin-left: -4px;
+}
+.samples .col:first-of-type {
+    margin-left: 0;
+}
+.samples .selected {
+    border: 1px solid #FFF;
+}
+.samples .input-group {
+    margin: 5px auto;
+}
+.samples .input-group input[type="text"] {
+    color: #CBCBCB;
+    font-size: 85%;
+    text-align: center;
+    padding: 6px 0;
+    background-color: #222;
+    border: 0 none;
+}
+.samples .hex {
+    width: 98px;
+}
+.samples .rgb {
+    width: 30px;
+    margin-left: -6px;
+}
+.samples .rgb:first-of-type {
+    margin-left: 0;
+}
+.samples .sample {
+    height: 175px;
+}

@@ -203,6 +203,86 @@
                     <img src="assets/svg/terp/arrow2.png">
                 </div>
                 <div class="magic-wheel-wheel">
+                    <div class="rule-box" style="display: none;">
+                        <h4>Color Rule</h4>
+                        <ul id="rules">
+                            <li data-type="1" class="active">Analogous</li>
+                            <li data-type="2">Monochromatic</li>
+                            <li data-type="3">Triad</li>
+                            <li data-type="4">Complementary</li>
+                            <li data-type="5">Custom</li>
+                        </ul>
+                    </div>
+                    <div class="canvas">
+                        <canvas id="picker"></canvas>
+                    </div>
+                    <div class="samples" style="display: none;">
+                        <div class="col" data-sample="3">
+                            <div class="sample"></div>
+                            <div class="input-group">
+                                <span>RGB</span>
+                                <input type="text" maxlength="3" class="rgb r">
+                                <input type="text" maxlength="3" class="rgb g">
+                                <input type="text" maxlength="3" class="rgb b">
+                            </div>
+                            <div class="input-group">
+                                <span>HEX</span>
+                                <input type="text" class="hex">
+                            </div>
+                        </div>
+                        <div class="col" data-sample="1">
+                            <div class="sample"></div>
+                            <div class="input-group">
+                                <span>RGB</span>
+                                <input type="text" maxlength="3" class="rgb r">
+                                <input type="text" maxlength="3" class="rgb g">
+                                <input type="text" maxlength="3" class="rgb b">
+                            </div>
+                            <div class="input-group">
+                                <span>HEX</span>
+                                <input type="text" class="hex">
+                            </div>
+                        </div>
+                        <div class="col selected" data-sample="0">
+                            <div class="sample"></div>
+                            <div class="input-group">
+                                <span>RGB</span>
+                                <input type="text" maxlength="3" class="rgb r">
+                                <input type="text" maxlength="3" class="rgb g">
+                                <input type="text" maxlength="3" class="rgb b">
+                            </div>
+                            <div class="input-group">
+                                <span>HEX</span>
+                                <input type="text" class="hex">
+                            </div>
+                        </div>
+                        <div class="col" data-sample="2">
+                            <div class="sample"></div>
+                            <div class="input-group">
+                                <span>RGB</span>
+                                <input type="text" maxlength="3" class="rgb r">
+                                <input type="text" maxlength="3" class="rgb g">
+                                <input type="text" maxlength="3" class="rgb b">
+                            </div>
+                            <div class="input-group">
+                                <span>HEX</span>
+                                <input type="text" class="hex">
+                            </div>
+                        </div>
+                        <div class="col" data-sample="4">
+                            <div class="sample"></div>
+                            <div class="input-group">
+                                <span>RGB</span>
+                                <input type="text" maxlength="3" class="rgb r">
+                                <input type="text" maxlength="3" class="rgb g">
+                                <input type="text" maxlength="3" class="rgb b">
+                            </div>
+                            <div class="input-group">
+                                <span>HEX</span>
+                                <input type="text" class="hex">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="magic-wheel-results">
                     <div class="result">
@@ -502,6 +582,7 @@
 <script src="assets/js/particles.min.js"></script>
 <script src="assets/js/jquery.mousewheel.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/wheel.js"></script>
 
 </body>
 </html>
