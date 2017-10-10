@@ -1,0 +1,113 @@
+.magic-wheel {
+    width: 94%;
+    margin: 2rem auto;
+    height: auto !important;
+    color: #58595b;
+    font-size: 14px;
+    line-height: 1.25em;
+}
+.magic-wheel h3 {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    line-height: 1em;
+}
+.magic-wheel h4 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    line-height: 1em;
+}
+.magic-wheel h5 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    line-height: 1em;
+}
+.plant {
+    display: flex;
+    margin-bottom: 4rem;
+}
+.plant-self {
+    height: 184px;
+}
+.magic-wheel-headers {
+    align-self: flex-start;
+    flex-basis: 25%;
+    flex-grow: 0;
+}
+.magic-wheel-headers>div {
+    padding-left: 1.8rem;
+    border-left: 2px solid #275b4d;
+    margin-bottom: 2rem;
+}
+.magic-wheel-headers>div p {
+    width:80%;
+}
+.magic-wheel-arrow {
+    flex-basis: 5%;
+    text-align: left;
+}
+.magic-wheel-figure {
+    display: flex;
+    flex-basis: 46%;
+    justify-content: space-around;
+}
+.magic-wheel-figure>div {
+    flex-basis: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.magic-wheel-figure>div>img {
+    margin-bottom: 1rem;
+}
+.magic-wheel-figure>div.w60 {
+    flex-basis: 60px;
+}
+.magic-wheel-results {
+    flex-basis: 24%;
+}
+.magic-wheel-results .result {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.magic-wheel-results .result>div {
+    flex-basis: 70%;
+}
+.magic-wheel-results .result>div.result-marker {
+    flex-basis: 25%;
+}
+.magic-wheel-wheel {
+    display: flex;
+    flex-basis: 46%;
+    justify-content: space-around;
+}
+.magic-wheel-headers>div.green-mark {
+    border-color: #a4cf27;
+}
+.magic-wheel-headers>div.green-mark h3 {
+    color: #a4cf27;
+}
+.magic-wheel-headers>div.yellow-mark {
+    border-color: #eeb11a;
+}
+.magic-wheel-headers>div.yellow-mark h3 {
+    color: #eeb11a;
+}
+.magic-wheel-headers>div.red-mark {
+    border-color: #ea4748;
+}
+.magic-wheel-headers>div.red-mark h3 {
+    color: #ea4748;
+}
+.magic-wheel-headers>div.purple-mark {
+    border-color: #7864ac;
+}
+.magic-wheel-headers>div.purple-mark h3 {
+    color: #7864ac;
+}
