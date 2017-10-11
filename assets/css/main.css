@@ -356,15 +356,14 @@ header.dark a {
     flex-direction: row;
     padding: 2rem;
     border-radius: 4px;
-    background-color: rgba(0,0,0,.3);
 }
 #slider .slides-container figure.slide0 article img {
-    width: 9vw;
+    width: 10vw;
 }
 #slider .slides-container figure.slide0 article .stripe {
     width: 2px;
     background-color: #ffffff;
-    height: 10vw;
+    height: 11vw;
     box-shadow: rgba(0,0,0,.5) 2px 2px 4px;
     margin-left: 2rem;
 }
@@ -378,7 +377,10 @@ header.dark a {
     font-weight: 300;
     color: #ffffff;
 }
-
+#slider .slides-container figure.slide0 article .text h2 {
+    font-size: 36px;
+    line-height: 1em;
+}
 #slider .slides-container figure.ani,
 #slider .slides-container figure.ani figcaption *,
 #slider .slides-container figure.ani nav
@@ -426,8 +428,8 @@ header.dark a {
     animation: none;
 }
 #slider .slides-container figure figcaption p {
-    width: 70%;
-    margin-left: 30%;
+    width: 80%;
+    margin-left: 20%;
     color: #686868;
     font-size: 16px;
     margin-top: 1rem;
