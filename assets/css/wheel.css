@@ -210,3 +210,27 @@
     background-color: #275b4d;
     margin-bottom: .5rem;
 }
+
+.magic-wheel-legend {
+    display: flex;
+    justify-content: space-between;
+}
+.magic-wheel-legend>ul,
+.magic-wheel-legend li,
+.magic-wheel-legend>p {
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+}
+.magic-wheel-legend li,
+.magic-wheel-legend>p>img {
+    margin-right: 1rem;
+}
+.magic-wheel-legend>p {
+    align-items: stretch;
+}
+.magic-wheel-legend li img {
+    width: 40px;
+    height: 40px;
+    margin:0 0.5rem;
+}
