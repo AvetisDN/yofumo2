@@ -273,16 +273,22 @@ header.dark a {
     /*display: none;*/
     margin-bottom: 4vh;
 }
-#particles-js, #slide0-bg {
+#particles-js, #slide0-bg, #slide6-bg, #slide7-bg {
     position: absolute;
     z-index: 0;
     width: 100%;
     height: 100%;
 }
-#slide0-bg {
+#slide0-bg, #slide6-bg, #slide7-bg {
     background: url("../img/slides/slide0.jpg") no-repeat center center;
     background-size: cover;
     height: 103%;
+}
+#slide6-bg {
+    background: url("../img/slides/3_myPro.jpg") no-repeat center center;
+}
+#slide7-bg {
+    background: url("../img/slides/4_outdoor.jpg") no-repeat center center;
 }
 #particles-js canvas {
     height: 100% !important;
