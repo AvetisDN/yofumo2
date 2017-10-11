@@ -316,8 +316,8 @@ header.dark a {
     animation-fill-mode: backwards;
 }
 #slider .slides-container figure.slide1{
-    background-size: 85% !important;
-    background-position: 0 70%;
+    background-size: 100% !important;
+    background-position: 0 100%;
 }
 #slider .slides-container figure.slide2{
     background-size: contain !important;
