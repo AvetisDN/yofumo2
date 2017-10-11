@@ -194,3 +194,19 @@
 .samples .sample {
     height: 175px;
 }
+.result-marker {
+    font-size: .85rem;
+    position: relative;
+}
+.result-marker i {
+    display: block;
+    position: absolute;
+    top:-.3rem;
+    left: -2rem;
+    font-size: 2rem;
+}
+.result-marker>div {
+    height: 1.5rem;
+    background-color: #275b4d;
+    margin-bottom: .5rem;
+}
