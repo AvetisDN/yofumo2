@@ -272,20 +272,23 @@ header.dark a {
     height:calc(83vh);
     margin-bottom: 4vh;
 }
-#particles-js, #slide0-bg, #slide1-bg, #slide6-bg, #slide7-bg {
+#particles-js, #slide0-bg, #slide1-bg, #slide2-bg, #slide6-bg, #slide7-bg {
     position: absolute;
     z-index: 0;
     width: 100%;
     height: 100%;
     background-size: cover !important;
 }
-#slide0-bg, #slide1-bg, #slide6-bg, #slide7-bg {
+#slide0-bg, #slide1-bg, #slide2-bg, #slide6-bg, #slide7-bg {
     background: url("../img/slides/slide0.jpg") no-repeat center center;
     background-size: cover;
     height: 103.5%;
 }
 #slide1-bg {
     background: url("../img/slides/slide1.jpg") no-repeat center center;
+}
+#slide2-bg {
+    background: url("../img/slides/1_slide.jpg") no-repeat center center;
 }
 #slide6-bg {
     background: url("../img/slides/3_myPro.jpg") no-repeat center center;
@@ -358,19 +361,19 @@ header.dark a {
     border-radius: 4px;
 }
 #slider .slides-container figure.slide0 article img {
-    width: 10vw;
+    width: 15vw;
 }
 #slider .slides-container figure.slide0 article .stripe {
     width: 2px;
     background-color: #ffffff;
-    height: 11vw;
+    height: 15vw;
     box-shadow: rgba(0,0,0,.5) 2px 2px 4px;
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 #slider .slides-container figure.slide0 article .text {
-    width:36vw;
+    width:48vw;
     box-sizing: border-box;
-    padding-left: 2rem;
+    padding-left: 4rem;
     text-shadow: rgba(0,0,0,.5) 2px 2px 4px;
     font-size: 1.5rem;
     line-height: 1.17em;
@@ -378,8 +381,9 @@ header.dark a {
     color: #ffffff;
 }
 #slider .slides-container figure.slide0 article .text h2 {
-    font-size: 36px;
+    font-size: 3.25rem;
     line-height: 1em;
+    margin-bottom: 2rem;
 }
 #slider .slides-container figure.ani,
 #slider .slides-container figure.ani figcaption *,
@@ -389,33 +393,59 @@ header.dark a {
 }
 #slider .slides-container figure figcaption {
     position: absolute;
-    width:40%;
+    width:50%;
     height: 100%;
     top:0;
     right:0;
     font-weight: 300;
     text-align: right;
+    color: #2b2b2b;
 }
 #slider .slides-container figure figcaption.mypro {
-    left: 0;
+    /*left: 0;
     right: auto;
-    text-align: left;
+    text-align: left;*/
 }
 #slider .slides-container figure figcaption.mypro h2,
 #slider .slides-container figure figcaption.mypro h3,
 #slider .slides-container figure figcaption.mypro p {
-    animation-name: figcaption2 !important;
     color: #ffffff;
-    margin-top: 2rem;
 }
 #slider .slides-container figure figcaption.mypro p {
-    margin-left: 0;
-    margin-top: 0;
+    width: 55%;
+    margin-left: 45%;
+}
+#slider .slides-container figure figcaption.terp h2,
+#slider .slides-container figure figcaption.terp h3,
+#slider .slides-container figure figcaption.terp p {
+    color: #ffffff;
+}
+#slider .slides-container figure figcaption.terp h3 {
+    font-size: 2rem;
+    line-height: 1em;
+    width: 90%;
+    margin-left: 10%;
+}
+#slider .slides-container figure figcaption.terp p {
+    width: 85%;
+    margin-left: 15%;
 }
 #slider .slides-container figure figcaption h2 {
-    font-size:3rem;
-    margin-top: 7vh;
+    font-size:4rem;
+    margin-top: 4vh;
     margin-bottom: 3vh;
+    animation-name: figcaption;
+    animation-delay: 450ms;
+    animation-duration: 400ms;
+    animation-play-state: paused;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+    line-height: 1em;
+}
+#slider .slides-container figure figcaption h3 {
+    font-size:2.5rem;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
     animation-name: figcaption;
     animation-delay: 450ms;
     animation-duration: 400ms;
@@ -429,8 +459,8 @@ header.dark a {
     font-size: 1.333rem;
     line-height: 1em;
     margin-bottom: 1vh;
-    width: 70%;
-    margin-left: 30%;
+    width: 80%;
+    margin-left: 20%;
     animation-name: figcaption;
     animation-delay: 450ms;
     animation-duration: 400ms;
@@ -444,12 +474,12 @@ header.dark a {
     animation: none;
 }
 #slider .slides-container figure figcaption p {
-    width: 80%;
-    margin-left: 20%;
-    color: #686868;
-    font-size: 16px;
+    width: 90%;
+    margin-left: 10%;
+    color: #2b2b2b;
+    font-size: 20px;
     margin-top: 1rem;
-    line-height: 1.333em;
+    line-height: 1.25em;
     animation-name: figcaption;
     animation-delay: 650ms;
     animation-duration: 400ms;

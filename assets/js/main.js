@@ -40,18 +40,22 @@
         $('.slider-navigation li').eq(activeSlide).addClass('active');
         $('#slide0-bg').fadeOut(400);
         $('#slide1-bg').fadeOut(400);
+        $('#slide2-bg').fadeOut(400);
         $('#slide6-bg').fadeOut(400);
         $('#slide7-bg').fadeOut(400);
         if (activeSlide === 0) {
             $('#slide0-bg').fadeIn(400);
         }
         if (activeSlide === 1) {
-            $('#slide1-bg').fadeIn(400);
+            $('#slide2-bg').fadeIn(400);
         }
         if (activeSlide === 2) {
-            $('#slide6-bg').fadeIn(400);
+            $('#slide1-bg').fadeIn(400);
         }
         if (activeSlide === 3) {
+            $('#slide6-bg').fadeIn(400);
+        }
+        if (activeSlide === 4) {
             $('#slide7-bg').fadeIn(400);
         }
     }
