@@ -282,7 +282,7 @@ header.dark a {
 #slide0-bg, #slide1-bg, #slide6-bg, #slide7-bg {
     background: url("../img/slides/slide0.jpg") no-repeat center center;
     background-size: cover;
-    height: 103%;
+    height: 103.5%;
 }
 #slide1-bg {
     background: url("../img/slides/slide1.jpg") no-repeat center center;
