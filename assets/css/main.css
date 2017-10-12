@@ -410,15 +410,18 @@ header.dark a {
 #slider .slides-container figure figcaption.mypro h3,
 #slider .slides-container figure figcaption.mypro p {
     color: #ffffff;
+    text-shadow: rgba(0,0,0,.8) 0 1px 3px;
 }
 #slider .slides-container figure figcaption.mypro p {
     width: 55%;
     margin-left: 45%;
+    text-shadow: rgba(0,0,0,.8) 0 1px 3px;
 }
 #slider .slides-container figure figcaption.terp h2,
 #slider .slides-container figure figcaption.terp h3,
 #slider .slides-container figure figcaption.terp p {
     color: #ffffff;
+    text-shadow: rgba(0,0,0,.8) 0 1px 3px;
 
 }
 #slider .slides-container figure figcaption.terp h3 {
@@ -426,10 +429,12 @@ header.dark a {
     line-height: 1em;
     width: 90%;
     margin-left: 10%;
+    text-shadow: rgba(0,0,0,.8) 0 1px 3px;
 }
 #slider .slides-container figure figcaption.terp p {
     width: 85%;
     margin-left: 15%;
+    text-shadow: rgba(0,0,0,.8) 0 1px 3px;
 }
 #slider .slides-container figure figcaption h2 {
     font-size:4rem;
