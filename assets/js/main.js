@@ -26,11 +26,11 @@
 
     var activeSlide = 0;
     slider();
-    /*var sliderTimer = setInterval(function () {
+    var sliderTimer = setInterval(function () {
         activeSlide++;
         if(activeSlide===$('#slider figure').length) activeSlide=0;
         slider();
-    }, 7500);*/
+    }, 7500);
     function slider() {
         $('#slider figure.ani').removeClass('ani').fadeOut(300);
         $('#slider figure').eq(activeSlide).fadeIn(300, function () {
@@ -58,12 +58,12 @@
 
     $('.slider-navigation li').click(function () {
         activeSlide = $(this).index();
-        /*clearInterval(sliderTimer);
+        clearInterval(sliderTimer);
         sliderTimer = setInterval(function () {
             activeSlide++;
             if(activeSlide===$('#slider figure').length) activeSlide=0;
             slider();
-        }, 5000);*/
+        }, 7500);
         slider();
     });
 

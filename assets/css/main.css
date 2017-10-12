@@ -270,7 +270,6 @@ header.dark a {
 .content {
     position: relative;
     height:calc(83vh);
-    /*display: none;*/
     margin-bottom: 4vh;
 }
 #particles-js, #slide0-bg, #slide1-bg, #slide6-bg, #slide7-bg {
