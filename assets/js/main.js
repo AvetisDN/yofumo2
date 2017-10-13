@@ -48,10 +48,10 @@
             $('#slide0-bg').fadeIn(400);
         }
         if (activeSlide === 1) {
-            $('#slide2-bg').fadeIn(400);
+            $('#slide1-bg').fadeIn(400);
         }
         if (activeSlide === 2) {
-            $('#slide1-bg').fadeIn(400);
+            $('#slide2-bg').fadeIn(400);
         }
         if (activeSlide === 3) {
             $('#slide6-bg').fadeIn(400);
