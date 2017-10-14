@@ -50,6 +50,7 @@
         if (activeSlide === 1) {
             $('#slide1-bg').fadeIn(400);
         }
+
         if (activeSlide === 2) {
             $('#slide2-bg').fadeIn(400);
         }
