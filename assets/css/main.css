@@ -320,7 +320,7 @@ header.dark a {
     background-size: 92%;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    /*overflow: hidden;*/
     animation-name: figure;
     animation-duration: 800ms;
     animation-play-state: paused;
@@ -508,20 +508,24 @@ header.dark a {
 #slider .slides-container figure nav {
     position: absolute;
     height: 30px;
-    bottom:0;
+    bottom:40px;
     width: 100%;
     z-index: 9999;
-    border-bottom: 2px solid #275b4d;
-    animation-name: nav;
+    /*border-bottom: 2px solid #275b4d;*/
+    /*animation-name: nav;
     animation-delay: 1000ms;
     animation-duration: 300ms;
     animation-play-state: paused;
     animation-timing-function: ease;
-    animation-fill-mode: backwards;
+    animation-fill-mode: backwards;*/
 }
 #slider .slides-container figure nav a {
     display: block;
     position: absolute;
+    width: 180px;
+    height: 150px;
+    bottom: -20px;
+    /*background-color: rgba(255,255,255,.5);*/
     color:#1a1a1a;
     font-size: 20px;
     font-weight: 300;
@@ -535,16 +539,20 @@ header.dark a {
     color: #09ad95;
 }
 #slider .slides-container figure nav>a:first-child{
-    left:6%;
+    left:-1%;
 }
 #slider .slides-container figure nav>a:nth-child(2){
-    left:33%;
+    left:16%;
+    width: 150px;
+    bottom: -45px;
 }
 #slider .slides-container figure nav>a:nth-child(3){
-    left:55%;
+    left:30%;
+    bottom: -70px;
 }
 #slider .slides-container figure nav>a:last-child{
-    left:75%;
+    left:87%;
+    bottom: 50px;
 }
 @keyframes figure {
     0% {
