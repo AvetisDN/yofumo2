@@ -190,7 +190,7 @@ header.dark{
     transition: 300ms ease;
     z-index: 998;
     left: 0;
-    padding-left: 30%;
+    padding-left: 45%;
 }
 .header-menu li:hover>ul {
     height: 145px;
@@ -285,13 +285,13 @@ header.dark a {
     height: 103.5%;
 }
 #slide1-bg {
-    background: url("../img/slides/slide1.jpg") no-repeat center center;
+    background: url("../img/slides/slide_1_2.jpg") no-repeat center center;
 }
 #slide2-bg {
     background: url("../img/slides/1_slide.jpg") no-repeat center center;
 }
 #slide6-bg {
-    background: url("../img/slides/3_myPro.jpg") no-repeat center center;
+    background: url("../img/slides/mypro_slide.jpg") no-repeat center center;
 }
 #slide7-bg {
     background: url("../img/slides/4_outdoor.jpg") no-repeat center center;
@@ -303,8 +303,8 @@ header.dark a {
 #slider {
     position: relative;
     z-index: 1;
-    width: 82%;
-    left: 9%;
+    width: calc(82% + 7.75vw);
+    left: 6.25%;
     height: 100%;
 }
 #slider .slides-container {
@@ -589,7 +589,7 @@ header.dark a {
 #slider .slider-navigation {
     position: absolute;
     top:0;
-    right:-50px;
+    left:-40px;
     width:50px;
     height: calc(100% - 70px);
     display: flex;
@@ -619,13 +619,13 @@ header.dark a {
     height: 20px;
     border-radius: 10px;
     margin: 7px auto;
-    background-color: rgba(255,255,255,.6);
+    background-color: rgba(255,255,255,.9);
     transition: 200ms ease;
     cursor: pointer;
     color: #275b4d;
     font-size: 12px;
     text-align: center;
-    box-shadow: rgba(45,75,65,.5) 0 1px 4px;
+    box-shadow: rgba(45,75,65,.85) 0 1px 4px;
 }
 #slider .slider-navigation li.active,
 #slider .slider-navigation li:hover {
@@ -1155,15 +1155,49 @@ footer .row .right a img {
     height:44px;
     border-radius: 50%;
     margin-right: .5rem;
-}
-.phone>a:hover span {
     animation-name: phone;
     animation-duration: .16s;
-    animation-iteration-count: 4;
+    animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+.phone>a:hover span {
 }
 .phone>a span img {
     width:80%;
+    margin: 10%;
+}
+
+#slider .phone {
+    text-align: left;
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+    background-color: rgba(255,255,255,.5);
+}
+#slider .phone>a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #2b2b2b;
+}
+#slider .phone>a span {
+    width: 26px;
+    flex-basis: 26px;
+    flex-shrink: 0;
+    height:26px;
+    border-radius: 50%;
+    margin-right: .5rem;
+    animation-name: phone;
+    animation-duration: .16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#slider .phone>a:hover span {
+}
+#slider .phone>a span img {
+    width:90%;
     margin: 10%;
 }
 
@@ -2195,7 +2229,7 @@ sup {
     border-radius: 38px;
     box-sizing: border-box;
     padding: 7px;
-    margin: 7rem auto 2rem auto;
+    margin: 7rem auto 0 auto;
     position: relative;
     font-size: 0;
     text-align: center;
@@ -2293,7 +2327,7 @@ sup {
     margin-top: 0 !important;
 }
 .product-overview-small {
-    height: 500px;
+    height: 450px;
 }
 .visible {
     display: flex !important;
