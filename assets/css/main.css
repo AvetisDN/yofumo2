@@ -190,7 +190,7 @@ header.dark{
     transition: 300ms ease;
     z-index: 998;
     left: 0;
-    padding-left: 30%;
+    padding-left: 45%;
 }
 .header-menu li:hover>ul {
     height: 145px;
@@ -291,7 +291,7 @@ header.dark a {
     background: url("../img/slides/1_slide.jpg") no-repeat center center;
 }
 #slide6-bg {
-    background: url("../img/slides/3_myPro.jpg") no-repeat center center;
+    background: url("../img/slides/mypro_slide.jpg") no-repeat center center;
 }
 #slide7-bg {
     background: url("../img/slides/4_outdoor.jpg") no-repeat center center;
