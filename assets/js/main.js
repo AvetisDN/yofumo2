@@ -30,7 +30,7 @@
         activeSlide++;
         if(activeSlide===$('#slider figure').length) activeSlide=0;
         slider();
-    }, 7500);
+    }, 9500);
 
     function slider() {
         $('#slider figure.ani').removeClass('ani').fadeOut(300);
@@ -69,7 +69,7 @@
             activeSlide++;
             if(activeSlide===$('#slider figure').length) activeSlide=0;
             slider();
-        }, 7500);
+        }, 500);
         slider();
     });
 
