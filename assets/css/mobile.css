@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #686868;
+    font-size: 2.7778vw;
+    background-color: #dbdbdb;
+    line-height: 1.3333em;
+}
+section {
+    width: 100vw;
+    position: relative;
+    padding: 0 4.1666vw;
+    box-sizing: border-box;
+    text-align: center;
+}
+section nav {
+    height: 17.778vw;
+    box-sizing: border-box;
+    padding: 4vw;
+}
+section header {
+    min-height: 17.778vw;
+    box-sizing: border-box;
+    padding: 4vw;
+}
+section nav>div {
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+}
+section nav>div:first-child {
+    text-align: left;
+}
+section nav>div:last-child {
+    text-align: right;
+}
+section nav a {
+    display: inline-block;
+    width: 9.778vw;
+    height: 9.778vw;
+}
+section nav a>img {
+    height: 100%;
+}
+section nav a.logo-btn {
+    border-radius: 50%;
+    background-color: #275b4d;
+}
+section nav a.logo-btn>img {
+    height: 76%;
+    position: relative;
+    top:12%;
+}
+section nav a.key-btn {
+    width: 7.778vw;
+    height: 7.778vw;
+    margin-top: 1vw;
+    border-radius: 50%;
+    background-color: #686868;
+    text-align: center;
+}
+section nav a.key-btn>img {
+    height: 70%;
+    position: relative;
+    top:15%;
+}
+section figure {
+    height: 68vw;
+    width: 100vw;
+    position: relative;
+    left:-4.1666vw;
+    background-position: center;
+    background-size: cover;
+}
+section h2 {
+    font-size: 8vw;
+    font-weight: 300;
+    color: #2b2b2b;
+    line-height: 1em;
+}
+section h3 {
+    font-size: 4vw;
+    margin-top: 4vw;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+section p {
+    margin: 4vw 0;
+}
+section.slide-1 h3 {
+    font-size: 4vw;
+    margin-top: 4vw;
+    padding: 0 5vw;
+    box-sizing: border-box;
+}
+section p {
+    margin: 4vw 0;
+    padding: 0 8vw;
+    box-sizing: border-box;
+}
+section footer {
+    height: 8.3333vw;
+}
+section footer div,
+section footer img {
+    display: block;
+    float: left;
+}
+section footer div {
+    width:38.5333vw;
+    position: relative;
+    height: 2px;
+    top:4vw;
+    background-color: #686868;
+}
+section footer img {
+    width: 8.3333vw;
+    margin: 0 3vw;
+}
+section>a {
+    display: inline-block;
+    padding: .2em 0.7em .3em;
+    background-color: #275b4d;
+    border-radius: 40px;
+    font-size: 3vw;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 4vw;
+}
+section>a img {
+    height: 3.3333vw;
+    display: inline-block;
+    position: relative;
+    top:.5vw;
+}
