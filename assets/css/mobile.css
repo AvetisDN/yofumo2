@@ -14,9 +14,15 @@ section {
     text-align: center;
 }
 section nav {
+    background-color: #dbdbdb;
     height: 17.778vw;
     box-sizing: border-box;
     padding: 4vw;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    z-index: 997;
 }
 section header {
     min-height: 17.778vw;
@@ -301,6 +307,7 @@ section>a img {
     transition: 350ms ease;
     opacity: 0;
     left: -100vw;
+    z-index: 9900;
 }
 #main-menu.vis {
     left: 0;
