@@ -69,7 +69,7 @@
             activeSlide++;
             if(activeSlide===$('#slider figure').length) activeSlide=0;
             slider();
-        }, 500);
+        }, 9500);
         slider();
     });
 
