@@ -4,6 +4,7 @@ body {
     font-size: 2.7778vw;
     background-color: #dbdbdb;
     line-height: 1.3333em;
+    overflow-x: hidden;
 }
 section {
     width: 100vw;
@@ -44,6 +45,8 @@ section nav a>img {
 section nav a.logo-btn {
     border-radius: 50%;
     background-color: #275b4d;
+    position: relative;
+    z-index: 9999;
 }
 section nav a.logo-btn>img {
     height: 76%;
@@ -285,4 +288,70 @@ section>a img {
     position: relative;
     top:6px;
     margin-right: .333em;
+}
+
+#main-menu {
+    position: fixed;
+    background-color: #252525;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 5vw;
+    font-weight: 300;
+    transition: 350ms ease;
+    opacity: 0;
+    left: -100vw;
+}
+#main-menu.vis {
+    left: 0;
+    opacity: 1;
+}
+#main-menu header {
+    height: 17.778vw;
+    box-sizing: border-box;
+    padding: 4vw;
+    text-align: left;
+}
+#main-menu header .close-btn {
+    display: inline-block;
+    width: 9.778vw;
+    height: 9.778vw;
+}
+#main-menu header a>img {
+    height: 100%;
+}
+#main-menu ul {
+    width: 90%;
+    margin: auto;
+}
+#main-menu ul ul {
+    width: 90%;
+    margin-left: 10%;
+    display: none;
+}
+#main-menu li {
+    float: none;
+}
+#main-menu li a {
+    display: block;
+    padding: 1em 0;
+    color: #FFFFFF;
+    border-bottom: 1px solid #aaaaaa;
+}
+#main-menu li a>span>img {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top:.3em;
+    left:.3em;
+    transform: rotate(180deg);
+    transition: 200ms ease;
+}
+
+#main-menu li.shown a>span>img {
+    transform: rotate(0);
+}
+#main-menu li.shown ul {
+    display: block;
 }
