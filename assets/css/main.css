@@ -596,7 +596,7 @@ header.dark a {
 }
 #slider .slider-navigation {
     position: absolute;
-    top:-10px;
+    bottom: 30px;
     left:-50px;
     width:50px;
     height: calc(100% - 70px);
@@ -1130,18 +1130,18 @@ footer .row .right a img {
     height:44px;
     border-radius: 50%;
     background-color: #ffffff;
-    margin-right: 1rem;
+    margin-right: 1rem;/*
     animation-name: phone;
     animation-duration: .16s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: linear;*/
 }
-/*.product-teaser p>a:hover span {
+.product-teaser p>a:hover span {
     animation-name: phone;
     animation-duration: .16s;
     animation-iteration-count: 4;
     animation-timing-function: linear;
-}*/
+}
 .product-teaser p>a span img {
     width:80%;
     margin: 10%;
@@ -1163,12 +1163,12 @@ footer .row .right a img {
     height:44px;
     border-radius: 50%;
     margin-right: .5rem;
+}
+.phone>a:hover span {
     animation-name: phone;
     animation-duration: .16s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-}
-.phone>a:hover span {
 }
 .phone>a span img {
     width:80%;
@@ -1197,12 +1197,12 @@ footer .row .right a img {
     height:26px;
     border-radius: 50%;
     margin-right: .5rem;
+}
+#slider .phone>a:hover span {
     animation-name: phone;
     animation-duration: .16s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-}
-#slider .phone>a:hover span {
 }
 #slider .phone>a span img {
     width:90%;
