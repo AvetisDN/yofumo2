@@ -194,11 +194,13 @@ section>a img {
 }
 .footer-menu {
     clear: both;
-    padding: 15px 0;
+    padding: 15px 0 0 0;
+}
+.footer-menu>ul {
+    display: flex;
+    justify-content: space-around;
 }
 .footer-menu li {
-    float: left;
-    margin-left: 2vw;
     position: relative;
 }
 .footer-menu li>ul {
@@ -206,7 +208,7 @@ section>a img {
     background-color: #275b4d;
     position: absolute;
     bottom: 25px;
-    left: -65%;
+    left: -5%;
     width: 250%;
     padding: 1rem 0;
     box-sizing: border-box;
@@ -224,6 +226,16 @@ section>a img {
     color: #ffffff;
     font-weight: 300;
     font-size: 14px;
+    padding-left: 1em;
+}
+#menu-underlay {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+    display: none;
 }
 .footer-menu li a::after {
     display: block;
@@ -249,7 +261,7 @@ section>a img {
     transition: 200ms ease;
     transform: scaleX(0);
 }
-.footer-menu li:hover ul {
+.footer-menu li.clicked ul {
     display: block;
 }
 .footer-menu li a:hover::after,
@@ -288,7 +300,6 @@ section>a img {
     color:#ffffff;
     font-size: 12px;
     font-weight: 400;
-    margin-left: 3em;
 }
 .footer .row .right a img {
     width:20px;
@@ -351,14 +362,14 @@ section>a img {
     width: 1em;
     height: 1em;
     position: relative;
-    top:.3em;
+    top:.2em;
     left:.3em;
-    transform: rotate(180deg);
+    transform: rotate(0);
     transition: 200ms ease;
 }
 
 #main-menu li.shown a>span>img {
-    transform: rotate(0);
+    transform: rotate(180deg);
 }
 #main-menu li.shown ul {
     display: block;

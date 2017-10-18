@@ -21,4 +21,15 @@ $(document).ready(function () {
         $('#main-menu').removeClass('vis');
     });
 
+    $('.footer-menu li:has(ul) a').click(function(e){
+        e.preventDefault();
+        $(this).parent().toggleClass('clicked');
+        $('#menu-underlay').show();
+    });
+
+    $('#menu-underlay').click(function () {
+        $('.footer-menu li.clicked').removeClass('clicked');
+        $('#menu-underlay').hide();
+    });
+
 });
