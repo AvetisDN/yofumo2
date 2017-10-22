@@ -1189,6 +1189,8 @@ footer .row .right a img {
     align-items: center;
     justify-content: flex-start;
     color: #2b2b2b;
+    position: relative;
+    z-index: 10000;
 }
 #slider .phone>a span {
     width: 26px;

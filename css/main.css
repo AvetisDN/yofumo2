@@ -510,7 +510,7 @@ header.dark a {
     height: 30px;
     bottom:0;
     width: 100%;
-    z-index: 9999;
+    z-index: 999;
     border-bottom: 2px solid #275b4d;
     animation-name: nav;
     animation-delay: 1000ms;
@@ -1181,6 +1181,8 @@ footer .row .right a img {
     align-items: center;
     justify-content: flex-start;
     color: #2b2b2b;
+    position: relative;
+    z-index: 99999;
 }
 #slider .phone>a span {
     width: 26px;
