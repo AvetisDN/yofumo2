@@ -683,9 +683,16 @@ header.dark a {
     animation-play-state: paused;
     animation-timing-function: ease;
     animation-fill-mode: backwards;
+    position: relative;
 }
 .btn:hover {
     background-color: #09ad95;
+}
+.btn.orange {
+    background-color: #ff4e00;
+}
+.btn.orange:hover {
+    background-color: #ff9800;
 }
 
 
@@ -1191,6 +1198,7 @@ footer .row .right a img {
     color: #2b2b2b;
     position: relative;
     z-index: 10000;
+    font-weight: 500;
 }
 #slider .phone>a span {
     width: 26px;
@@ -2540,4 +2548,39 @@ sup {
     margin-right: .4rem;
     font-size: 1.2em;
     line-height: 1.3333rem;
+}
+
+
+#sendmail, #sendmail2 {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    top:0;
+    right:0;
+    border-radius: 1.3rem;
+    display: none;
+}
+[id*='sendmail'] input {
+    width: 284px;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #696969;
+}
+[id*='sendmail'] button img {
+    height: 1rem;
+    position: relative;
+    top:1px;
+}
+[id*='sendmail'] button {
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size: 1.2rem;
+    margin-top: 0;
 }

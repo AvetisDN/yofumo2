@@ -223,4 +223,26 @@
      });
      }*/
 
+    $('a[href*="sendmail"]:has(div:hidden)').click(function (e) {
+        e.preventDefault();
+        $(this).find('div').show(400);
+        $(this).find('div input:first').focus();
+        clearTimeout(sliderTimer);
+        $(document).mouseup(function (e) {
+            var container = $("a[href*='sendmail'] div:visible");
+            if (!container.is(e.target) && container.has(e.target).length === 0)
+            {
+                container.hide(400);
+            }
+        });
+    });
+
+    /*
+    * sliderTimer = setInterval(function () {
+     activeSlide++;
+     if(activeSlide===$('#slider figure').length) activeSlide=0;
+     slider();
+     }, 9500);
+    * */
+
 })();
