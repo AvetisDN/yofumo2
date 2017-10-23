@@ -233,16 +233,14 @@
             if (!container.is(e.target) && container.has(e.target).length === 0)
             {
                 container.hide(400);
+                sliderTimer = setInterval(function () {
+                    activeSlide++;
+                    if(activeSlide===$('#slider figure').length) activeSlide=0;
+                    slider();
+                }, 9500);
             }
         });
     });
 
-    /*
-    * sliderTimer = setInterval(function () {
-     activeSlide++;
-     if(activeSlide===$('#slider figure').length) activeSlide=0;
-     slider();
-     }, 9500);
-    * */
 
 })();
