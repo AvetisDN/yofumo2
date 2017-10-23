@@ -374,3 +374,236 @@ section>a img {
 #main-menu li.shown ul {
     display: block;
 }
+
+/*ABOUT*/
+
+.about {
+    width:100%;
+    max-width:1480px;
+    position: relative;
+    margin: 2rem auto;
+    font-weight: 300;
+}
+.about #particles-js {
+    position: absolute;
+    z-index: 0;
+    background-size: cover !important;
+    width:130%;
+    height: 100vh;
+    margin-left: -15%;
+}
+.about-header {
+    padding: 1.5rem .25rem;
+    border-bottom: 2px solid #275b4d;
+    position: relative;
+    z-index: 999;
+}
+.about-header::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.about h2, .press h2 {
+    color: #1f1f1f;
+    font-size: 40px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    line-height: 1em;
+}
+.about h3 {
+    color: #275b4d;
+    font-weight: 500;
+}
+.about p {
+    color: #58595b;
+    margin: 1rem 0;
+    font-size: .9rem;
+    line-height: 1.15em;
+    padding: 0;
+    text-align: left;
+}
+.about-header .about-header-col-1-2 {
+    width:98%;
+}
+.about-header>.about-header-col-1-2:last-child {
+
+}
+
+.about-body {
+    margin: 1rem auto;
+    padding:1.5rem 0;
+    position: relative;
+    z-index: 997;
+}
+.about-body h2, .press h2 {
+    text-transform: none;
+    text-align: center;
+    font-weight:400;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.about-body-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+.about-body-container .about-team.one-n-only {
+    flex-basis: 46%;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0 22%;
+}
+.about-body-container .about-team {
+    flex-basis: 42%;
+    text-align: center;
+    line-height: 1.5em;
+}
+.about-body-container .about-team .about-team-img img {
+    border-radius:50%;
+    border:4px solid #275b4d;
+    width: 100%;
+}
+.about-body-container .about-team h4 {
+    font-size: 1.1rem;
+    font-weight:500;
+    color: #275b4d;
+    margin-top: 1rem;
+    line-height: 1em;
+}
+.about-body-container .about-team h4::after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid #58595b;
+    width: 100%;
+    margin: auto;
+    margin-top: .75rem;
+}
+.about-body-container .about-team h5 {
+    font-size: 1.15rem;
+    font-weight:400;
+    color: #000;
+    margin-top: .75rem;
+}
+.about-body-container .about-team p {
+    text-align: center;
+}
+
+.about b {
+    font-weight: 700;
+}
+.about>p {
+    position: relative;
+    z-index:9999;
+}
+
+.product-teaser {
+    width: 100%;
+    height: 408px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    /*display: none;*/
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 1%;
+    color: #ffffff;
+}
+.product-teaser a {
+    color: #ffffff;
+    font-size: 1rem;
+}
+.product-teaser .product-teaser-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,15,10,0.65);
+    z-index: 0;
+    top:0;
+    left:0;
+}
+.product-teaser h3.smaller{
+    display: inline-block;
+    font-size: 24px;
+    padding: 8.5rem 0 0 0;
+    position: relative;
+    font-weight: 400;
+    text-transform: none;
+    z-index: 1;
+    line-height: 1.333em;
+}
+.product-teaser p{
+    text-align: center;
+    font-weight: 300;
+    padding: 1.5rem 0 1rem 0;
+    position: relative;
+    z-index: 1;
+}
+.product-teaser p>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-teaser p>a span {
+    width: 44px;
+    flex-basis: 44px;
+    flex-shrink: 0;
+    height:44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 1rem;/*
+    animation-name: phone;
+    animation-duration: .16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;*/
+}
+.product-teaser p>a:hover span {
+    animation-name: phone;
+    animation-duration: .16s;
+    animation-iteration-count: 4;
+    animation-timing-function: linear;
+}
+.product-teaser p>a span img {
+    width:80%;
+    margin: 10%;
+}
+
+.phone {
+    text-align: left;
+}
+.phone>a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #686868;
+}
+.phone>a span {
+    width: 44px;
+    flex-basis: 44px;
+    flex-shrink: 0;
+    height:44px;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+.phone>a:hover span {
+    animation-name: phone;
+    animation-duration: .16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.phone>a span img {
+    width:80%;
+    margin: 10%;
+}
+
+#section-map {
+    width: 100%;
+    height: 350px;
+}
+#map {
+    width: 100%;
+    height: 100%;
+}

@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    particlesJS.load('particles-js', '../assets/js/particlesjs-config.json', function () {
+    });
+
+
     $('.close-btn').on('click', function (e) {
         e.preventDefault();
         $('#main-menu').removeClass('vis');
