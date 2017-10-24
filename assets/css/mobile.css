@@ -970,11 +970,12 @@ section>a img {
     justify-content: space-around;
     width: 94%;
     margin: auto;
+    flex-direction: row;
 }
 .product-overview-icons.small>div {
     flex-direction: column;
-    flex-basis: 25%;
-    flex-shrink: 0;
+    flex-basis: 15%;
+    flex-shrink: 1;
     padding: 1rem 0;
     justify-content: flex-start;
     align-items: center;
