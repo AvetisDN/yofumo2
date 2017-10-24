@@ -682,11 +682,12 @@ section>a img {
     margin: 1rem auto;
 }
 .product-overview-full-tech h4 {
-    font-size:1.5rem;
+    font-size:1rem;
     text-transform: uppercase;
     color: #a4a4a4;
     text-align: center;
     margin-bottom: 2rem;
+    line-height: 1.5em;
 }
 .product-overview-full-tech h4 a {
     color: #275b4d;
@@ -696,11 +697,12 @@ section>a img {
 .product-overview-full-tech h4 a span {
     position: absolute;
     width: 100%;
-    height: 40px;
+    height: 20px;
     display: inline-block;
-    top:100%;
+    top:60%;
     left: 0;
     text-align: center;
+    display: none;
 }
 .product-overview-full-tech::after,
 .product-overview-full-tech-lists::after,
@@ -974,7 +976,7 @@ section>a img {
 }
 .product-overview-icons.small>div {
     flex-direction: column;
-    flex-basis: 15%;
+    flex-basis: 25%;
     flex-shrink: 1;
     padding: 1rem 0;
     justify-content: flex-start;
@@ -983,6 +985,11 @@ section>a img {
     font-size: 15px;
     text-align: center;
     line-height: 1.2em;
+}
+.product-overview-icons.small>div p {
+    font-size: .8rem;
+    padding: 0;
+    margin: 0;
 }
 .product-overview-icons.small.ten>div {
     flex-basis: 10%;
@@ -997,14 +1004,13 @@ section>a img {
     background-color: #686868;
     flex-basis:75px;
     flex-shrink: 0;
-    height: 75px;
     border-radius: 38px;
     margin-right: 1rem;
+    width: 100%;
 }
 .product-overview-icons.small>div>span{
     background-color: transparent;
     text-align: center;
-    height: 100px;
     margin-bottom: .5rem;
 }
 .product-overview-icons>div>span img {
@@ -1026,4 +1032,66 @@ section.header {
 .sketchfab-embed-wrapper iframe {
     width: 100%;
     height: 100%;
+}
+
+
+.products-testimonial {
+    width: 96%;
+    margin: 4rem auto;
+    position: relative;
+    height: 280px;
+    clear: both;
+    /*display: none;*/
+}
+.products-testimonial .arrow-prev,
+.products-testimonial .arrow-next {
+    display: block;
+    position: absolute;
+    min-height: 150px;
+    height: 100%;
+    width: 42px;
+    background: url("../svg/products/arrow-next2.png") center space no-repeat;
+    background-size: contain;
+    top:0;
+    right:0;
+    opacity: .35;
+}
+.products-testimonial .arrow-prev {
+    background-image: url("../svg/products/arrow-prev2.png");
+    left: 0;
+}
+.products-testimonial ul {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    background: url("../img/quote-big-1.png") no-repeat 0 0, url("../img/quote-big-2.png") no-repeat 100% 100%;
+}
+.products-testimonial ul li {
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #4e4e4e;
+    font-style: italic;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.333em;
+    width: 90%;
+    margin-left:5%;
+}
+.products-testimonial ul li span {
+    font-weight: 500;
+    font-style: normal;
+    display: block;
+    margin-top: 1rem;
+}
+.products-testimonial ul li:first-child {
+    display: flex;
+    opacity: 1;
 }
