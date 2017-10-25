@@ -957,6 +957,18 @@ section>a img {
     content: '';
     clear: both;
 }*/
+.product-overview-icons.big {
+    flex-wrap: wrap;
+}
+.product-overview-icons.big>div {
+    flex-basis: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem 1rem 2rem 1rem;
+    display: flex;
+    font-weight: 300;
+    align-items: center;
+    justify-content: flex-start;
+}
 .product-overview-icons>div {
     flex-basis: 33.3333%;
     box-sizing: border-box;
