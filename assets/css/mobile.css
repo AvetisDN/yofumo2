@@ -1649,3 +1649,75 @@ section.header {
     color: #275b4d !important;
     margin-bottom: 0;
 }
+
+
+
+.press {
+    max-width: 1600px;
+    width: 98%;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+.press::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.press article {
+    width: calc(50% - 2px);
+    box-sizing: border-box;
+    float: left;
+    padding: 1.5rem .5rem;
+    transition: 300ms ease;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0);
+    color: #5d5d5d;
+}
+.press article:hover {
+    border: 1px solid #5d5d5d;
+    box-shadow: rgba(39,91,77,.35) 3px 4px 8px;
+}
+.press article:hover * {
+    opacity: 1;
+    cursor: default;
+}
+.press article img {
+    width: 100%;
+}
+.press article .press-date {
+    font-size: .9rem;
+    font-weight: 300;
+    text-align: left;
+    float: left;
+    color: #1f1f1f;
+}
+.press article p {
+    font-size: .8rem;
+    font-weight: 300;
+    padding: 1rem 0;
+    line-height: 1.2em;
+    transition: 300ms ease;
+    opacity: .5;
+    text-align: left;
+    color: #1f1f1f;
+    height: 3rem;
+    overflow: hidden;
+    border-top: 1px solid #1f1f1f;
+}
+.press article a {
+    color: #275b4d;
+    cursor: pointer !important;
+    text-align: right;
+    display: block;
+    float: right;
+    padding-right: .3rem;
+}
+.press article a::after {
+    font-family: 'FontAwesome';
+    content:"\f04b";
+    font-size: .6667rem;
+    display: inline-block;
+    position: relative;
+    left: 4px;
+    top:0;
+}
