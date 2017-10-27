@@ -260,7 +260,7 @@
                     that.find('.err').hide();
                     that.find('.msg').show();
                 } else {
-                    that.find('form').hide();
+                    //that.find('form').hide();
                     that.find('.err').show();
                     that.find('.msg').hide();
                 }
