@@ -2593,3 +2593,9 @@ sup {
 {
     color: #2b2b2b;
 }
+
+.msg, .err {
+    display: none;
+    font-size: 1.5rem;
+    color: #1f1f1f;
+}

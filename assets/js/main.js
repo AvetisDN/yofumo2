@@ -242,5 +242,31 @@
         });
     });
 
+    $('#sendmail-form-1, #sendmail-form-2').submit(function (e) {
+        e.preventDefault();
+        var data = {
+            name: $(this).find('input[name=name]').val(),
+            mail: $(this).find('input[name=mail]').val(),
+            wish: $(this).attr('data-product')
+        };
+        var that = $(this);
+        $.ajax({
+            url: 'mail.php',
+            type: 'post',
+            data: data,
+            success: function(result) {
+                if(result==1){
+                    that.find('form').hide();
+                    that.find('.err').hide();
+                    that.find('.msg').show();
+                } else {
+                    that.find('form').hide();
+                    that.find('.err').show();
+                    that.find('.msg').hide();
+                }
+            }
+        });
+    });
+
 
 })();
