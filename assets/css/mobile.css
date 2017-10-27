@@ -728,7 +728,7 @@ section>a img {
     flex-direction: column;
 }
 .product-overview-full-tech-lists>ul {
-    margin-right: 2rem;
+
 }
 .product-overview-full-tech-lists>ul>li {
     flex-basis: 25%;
@@ -736,6 +736,9 @@ section>a img {
     width: 100%;
     color: #686868;
     margin: 1rem 0 2rem 0;
+}
+.product-overview-full-tech ul li h5 {
+    padding-left: .5rem;
 }
 .product-overview-full-tech ul li h5,
 .product-overview-full-tech ul li ul {
