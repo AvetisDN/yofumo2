@@ -1290,6 +1290,18 @@ section.header {
      margin: 0 auto;
      margin-left: 1%;
  }
+.magic-wheel-results-3 {
+     float: left;
+     width: 32%;
+     margin: 0 auto;
+     margin-left: 1%;
+ }
+.magic-wheel-results-3 .result p {
+    margin: 0;
+    padding: 0;
+    font-size: 2.65vw;
+    line-height: 1.25em;
+}
 
 .magic-wheel-results {
     float: left;
@@ -1362,15 +1374,16 @@ section.header {
 .result-marker {
     font-size: .85rem;
     position: relative;
+    margin-bottom: .25rem;
 }
 .result-marker i {
     display: block;
     position: absolute;
     width: 2rem;
     height: 2rem;
-    top:-.3rem;
-    left: -1.8rem;
-    font-size: 2rem;
+    top:-0.2rem;
+    left: -1.4rem;
+    font-size: 1.5rem;
 }
 .result-marker b {
     color: #7864ac;
@@ -1378,17 +1391,17 @@ section.header {
     font-weight: 500;
 }
 .result-marker>div {
-    height: 1.5rem;
-    width: 40%;
+    height: 1.2rem;
+    width: 38%;
     float: left;
     background-color: #275b4d;
-    margin-bottom: .5rem;
+    margin-bottom: .85rem;
 }
 .result-marker>span {
     display: block;
     float: left;
-    width: 50%;
-    font-size:2.6vw;
+    width: 52%;
+    font-size:2.4vw;
     line-height: 1.2em;
     padding-left: 1vw;
 }
@@ -1416,11 +1429,12 @@ section.header {
 #res4 {
     float: left;
     width: 31% !important;
+    padding-top: 1rem;
 }
 #res5 {
     float: left;
     width: 64% !important;
-    padding-top: 2rem;
+    padding-top: 3rem;
     margin: 0;
     margin-right: 2%;
 }
