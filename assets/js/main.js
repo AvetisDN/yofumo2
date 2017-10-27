@@ -226,7 +226,7 @@
     $('a[href*="sendmail"]:has(div:hidden)').click(function (e) {
         e.preventDefault();
         $(this).find('div').show(400);
-        $(this).find('div input:first').focus();
+        //$(this).find('div input:first').focus();
         clearTimeout(sliderTimer);
         $(document).mouseup(function (e) {
             var container = $("a[href*='sendmail'] div:visible");
