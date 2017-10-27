@@ -2584,3 +2584,12 @@ sup {
     font-size: 1.2rem;
     margin-top: 0;
 }
+
+.mypro a{
+    color: #ffffff;
+}
+.outdoor h2 a,
+.outdoor p a
+{
+    color: #2b2b2b;
+}
