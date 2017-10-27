@@ -1197,6 +1197,11 @@ section.header {
     line-height: 1.25em;
     text-align: left;
 }
+.magic-wheel::after {
+    display: block;
+    content: '';
+    clear: both;
+}
 .magic-wheel h3 {
     font-size: 22px;
     font-weight: 700;
@@ -1213,9 +1218,9 @@ section.header {
     line-height: 1em;
 }
 .magic-wheel h5 {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin-bottom: .333rem;
     line-height: 1em;
 }
 .plant {
@@ -1224,9 +1229,14 @@ section.header {
 .plant-self {
     /*height: 184px;*/
 }
+.plant-self::after {
+    clear: both;
+    display: block;
+    content: '';
+}
 .magic-wheel-headers {
     float: left;
-    width: 50%;
+    width: 33%;
 }
 .magic-wheel-headers-2 {
     width: 100%;
@@ -1236,13 +1246,19 @@ section.header {
     border-left: 2px solid #275b4d;
     margin-bottom: 2rem;
 }
+.magic-wheel-headers-2>div {
+    float: left;
+    width: 30%;
+}
 .magic-wheel-headers>div p {
-    width:90%;
+    width:98%;
+    font-size: 2.65vw;
+    line-height: 1.25em;
     padding: 0;
     margin: 0;
 }
 .magic-wheel-arrow {
-    width: 44%;
+    width: 33%;
     float: left;
 }
 .magic-wheel-arrow img {
@@ -1269,22 +1285,26 @@ section.header {
     flex-basis: 60px;
 }*/
 .magic-wheel-results {
-    width: 96%;
+     float: left;
+     width: 32%;
+     margin: 0 auto;
+     margin-left: 1%;
+ }
+
+.magic-wheel-results {
+    float: left;
+    width: 100%;
     margin: 0 auto;
-    float: none;
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-.magic-wheel-results .result {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: space-between;
+.magic-wheel-results-2 .result {
+    width: 31.333% !important;
+    margin: 0 1%;
 }
 .magic-wheel-results .result p {
     margin: 0;
     padding: 0;
+    font-size: 2.65vw;
+    line-height: 1.25em;
 }
 .magic-wheel-results .result>div {
     flex-basis: 96%;
@@ -1318,6 +1338,7 @@ section.header {
 }
 .magic-wheel-headers>div.green-mark h3 {
     color: #a4cf27;
+    font-size: 1rem;
 }
 .magic-wheel-headers>div.yellow-mark {
     border-color: #eeb11a;
@@ -1345,8 +1366,10 @@ section.header {
 .result-marker i {
     display: block;
     position: absolute;
+    width: 2rem;
+    height: 2rem;
     top:-.3rem;
-    left: -2rem;
+    left: -1.8rem;
     font-size: 2rem;
 }
 .result-marker b {
@@ -1356,8 +1379,18 @@ section.header {
 }
 .result-marker>div {
     height: 1.5rem;
+    width: 40%;
+    float: left;
     background-color: #275b4d;
     margin-bottom: .5rem;
+}
+.result-marker>span {
+    display: block;
+    float: left;
+    width: 50%;
+    font-size:2.6vw;
+    line-height: 1.2em;
+    padding-left: 1vw;
 }
 .yellow-res .result-marker>div {
     background-color: #eeb11a;
@@ -1380,27 +1413,184 @@ section.header {
 .purple-res h4 {
     color: #fd15fd;
 }
-
-.magic-wheel-legend {
+#res4 {
+    float: left;
+    width: 31% !important;
+}
+#res5 {
+    float: left;
+    width: 64% !important;
+    padding-top: 2rem;
+    margin: 0;
+    margin-right: 2%;
+}
+#res5 img {
+    margin-right: .333rem;
+}
+#res5 p {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    color: #275b4d;
+}
+.clearfix {
+    clear: both;
+}
+.magic-wheel-legend {
+    clear: both;
+    width: 100%;
+
+}
+.magic-wheel-legend>ul {
+    width: 100%;
 }
 .magic-wheel-legend>ul,
 .magic-wheel-legend li,
 .magic-wheel-legend>p {
-    flex-basis: 45%;
     display: flex;
     align-items: center;
 }
+.magic-wheel-legend li {
+    flex-basis: 15%;
+    flex-grow: 0;
+}
 .magic-wheel-legend li,
 .magic-wheel-legend>p>img {
-    margin-right: 1rem;
+    margin-right: .5rem;
 }
 .magic-wheel-legend>p {
     align-items: stretch;
 }
 .magic-wheel-legend li img {
-    width: 40px;
-    height: 40px;
-    margin:0 0.5rem;
+    width: 8vw;
+    height: 8vw;
+    margin:0 0.3rem 0 0;
+}
+.magic-wheel-legend li p {
+    padding: 0;
+    font-size: 3vw;
+    line-height: 1em;
+}
+.markered li {
+    list-style: disc !important;
+    color: #1f1f1f !important;
+    padding-left: 1rem;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+.markered li::before {
+    display: inline-block;
+    content: '\e800';
+    font-family: 'fontello';
+    margin-right: .4rem;
+    font-size: 1.2em;
+    line-height: 1.3333rem;
+}
+
+.download-pdf img {
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+
+/**/
+.product-overview-range {
+    margin-bottom:4rem;
+}
+.product-overview-range * {
+    line-height: 1.25em;
+}
+.product-overview-range h2 {
+    font-weight: 500;
+    font-size:46px;
+    color: #275b4d;
+    text-transform: uppercase;
+}
+.product-overview-range h3 {
+    font-weight: 400;
+    font-size:24px;
+    color: #58595b;
+    text-transform: uppercase;
+}
+.range-graph {
+    height: 2px;
+    background-color: #275b4d;
+    margin: 1rem 0 5rem 0;
+    position: relative;
+}
+.range-graph::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-color: #275b4d;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    top:-15px;
+    left: -31px;
+}
+.range-graph ul {
+    width:48%;
+    position: absolute;
+    right:0;
+}
+.range-graph ul li {
+    float: left;
+    width:33%;
+    text-align: center;
+    font-size: 18px;
+    color: #58595b;
+    font-weight: 400;
+    padding: 1.5rem 0;
+    position: relative;
+    line-height: .75em;
+}
+.range-graph ul li::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-color: #275b4d;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top:-9px;
+    left: 50%;
+    margin-left: -10px;
+}
+.range-descr::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.range-descr-img {
+    float: left;
+    width:50%;
+    height:350px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8%;
+}
+.range-descr-txt {
+    float: left;
+    width:39%;
+    padding-top: 3rem;
+    color: #1f1f1f;
+    font-size: 1.15rem;
+}
+.range-descr-txt p {
+    margin-bottom: 2rem;
+}
+.range-descr-txt .marked {
+    position: relative;
+    padding-left: 2rem;
+    line-height: 2rem;
+}
+.range-descr-txt .marked::before{
+    display: block;
+    content: '';
+    position: absolute;
+    width:1rem;
+    height: 2rem;
+    background-color: #275b4d;
+    top:0;
+    left:0;
 }
