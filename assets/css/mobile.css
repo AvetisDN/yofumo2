@@ -1501,15 +1501,19 @@ section.header {
 }
 .product-overview-range h2 {
     font-weight: 500;
-    font-size:46px;
+    font-size:40px;
+    line-height: 1em;
     color: #275b4d;
     text-transform: uppercase;
+    text-align: left;
 }
 .product-overview-range h3 {
     font-weight: 400;
     font-size:24px;
+    margin-top: 0;
     color: #58595b;
     text-transform: uppercase;
+    text-align: left;
 }
 .range-graph {
     height: 2px;
@@ -1522,14 +1526,14 @@ section.header {
     display: block;
     content: '';
     background-color: #275b4d;
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
-    top:-15px;
-    left: -31px;
+    top:-10px;
+    left: 0;
 }
 .range-graph ul {
-    width:48%;
+    width:58%;
     position: absolute;
     right:0;
 }
@@ -1537,7 +1541,7 @@ section.header {
     float: left;
     width:33%;
     text-align: center;
-    font-size: 18px;
+    font-size: 12px;
     color: #58595b;
     font-weight: 400;
     padding: 1.5rem 0;
@@ -1549,10 +1553,10 @@ section.header {
     display: block;
     content: '';
     background-color: #275b4d;
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    top:-9px;
+    top:-6px;
     left: 50%;
     margin-left: -10px;
 }
@@ -1562,27 +1566,28 @@ section.header {
     clear: both;
 }
 .range-descr-img {
-    float: left;
-    width:50%;
-    height:350px;
+    width:100%;
+    height:200px;
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 8%;
 }
 .range-descr-txt {
     float: left;
-    width:39%;
+    width:100%;
     padding-top: 3rem;
     color: #1f1f1f;
     font-size: 1.15rem;
+    text-align: justify;
 }
 .range-descr-txt p {
     margin-bottom: 2rem;
+    padding: 0;
 }
 .range-descr-txt .marked {
     position: relative;
-    padding-left: 2rem;
-    line-height: 2rem;
+    padding-left: 1.4rem;
+    line-height: 1em;
 }
 .range-descr-txt .marked::before{
     display: block;
@@ -1593,4 +1598,54 @@ section.header {
     background-color: #275b4d;
     top:0;
     left:0;
+}
+.iconed {
+    clear: both;
+}
+.iconed li {
+    float: left;
+    width: 48%;
+}
+.iconed li img {
+    margin: 0 !important;
+    margin-right: .25rem !important;
+}
+.iconed li p {
+    line-height: 1.1em;
+    font-size: .9rem;
+    margin: 0;
+    text-align: left !important;
+    color: #1f1f1f !important;
+}
+
+.logo-stripe {
+    position: relative;
+}
+.logo-stripe img {
+    width: 13%;
+    margin: 0 3.5%;
+    display: block;
+    float: left;
+}
+.logo-stripe::before,
+.logo-stripe::after{
+    display: block;
+    content: '';
+    width: 40%;
+    float: left;
+    height:2px;
+    background-color: #275b4d;
+    position: relative;
+    top:25px;
+}
+
+
+.no-quotes {
+    background: none !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+    width: 100% !important;
+    font-size: 20px !important;
+    color: #275b4d !important;
+    margin-bottom: 0;
 }
