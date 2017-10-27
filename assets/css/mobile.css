@@ -1597,6 +1597,9 @@ section.header {
 .range-descr-txt p {
     margin-bottom: 2rem;
     padding: 0;
+    font-size: 1.1rem;
+    color: #1f1f1f;
+    font-weight: 300;
 }
 .range-descr-txt .marked {
     position: relative;
