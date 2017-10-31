@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    var sliderDuration = 10000;
+    var sliderDuration = 12000;
+    var sliderDurationClick = 22000;
     var sliderTimer = null;
     var activeSlide = 0;
 
@@ -200,7 +201,7 @@ $(document).ready(function () {
         var container = $("a[href*='sendmail'] div:visible");
         if (container.length>0 && !container.is(e.target) && container.has(e.target).length === 0) {
             container.hide(400);
-            sliderTimer = setInterval(nextSlide, sliderDuration);
+            sliderTimer = setInterval(nextSlide, sliderDurationClick);
         }
     });
     $('.form-opener-1').click(function (e) {
