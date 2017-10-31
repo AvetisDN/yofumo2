@@ -2599,3 +2599,50 @@ sup {
     font-size: 1.5rem;
     color: #1f1f1f;
 }
+
+@media screen and (max-width: 1368px) {
+    header {
+        height: 13vh;
+        padding-top: 4vh !important;
+        box-sizing: border-box !important;
+        transition: 300ms ease;
+        background-color: transparent;
+    }
+    .teaser-page.stage1 header {
+        background-color: #275b4d;
+    }
+    .logo-img, .logo-text {
+        float: left;
+        position: relative;
+        display: block;
+        z-index: 999;
+    }
+    .logo-img {
+        width: 58px;
+        height: 58px;
+        border-radius: 34px;
+        background-color: #275b4d;
+        top:-11px;
+    }
+    .logo-img2 {
+        display: none;
+        width: 58px;
+        height: 58px;
+        position: absolute;
+        border-radius: 34px;
+        background-color: #275b4d;
+        top:calc(4vh - 11px);
+        left: 2.875vw;
+    }
+    .logo-img img {
+        /* display: none; */
+        position: absolute;
+        width: 40px;
+        left: 9px;
+        top: 10px;
+        z-index: 1;
+    }
+    #slider .slides-container figure figcaption p {
+        font-size: 1.2rem !important;
+    }
+}
