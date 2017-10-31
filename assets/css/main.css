@@ -2645,4 +2645,7 @@ sup {
     #slider .slides-container figure figcaption p {
         font-size: 1.2rem !important;
     }
+    footer {
+        height: 16vh;
+    }
 }
