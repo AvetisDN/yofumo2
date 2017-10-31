@@ -629,6 +629,7 @@ section>a img {
     list-style-type: disc !important;
     display: block;
     line-height: 1.3333rem;
+    position: relative;
 }
 .product-overview figure figcaption .overview-li li::before {
     display: inline-block;
@@ -637,6 +638,8 @@ section>a img {
     margin-right: .4rem;
     font-size: 1.2em;
     line-height: 1.3333rem;
+    position: absolute;
+    left: -.75rem;
 }
 
 .product-overview-small {
