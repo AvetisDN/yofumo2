@@ -236,18 +236,18 @@
     color: #eeb11a;
 }
 .magenta-res .result-marker>div {
-    background-color: #ff1272;
+    background-color: #ea4748;
 }
 .magenta-res .result-marker i,
 .magenta-res h4 {
-    color: #ff1272;
+    color: #ea4748;
 }
 .purple-res .result-marker>div {
-    background-color: #fd15fd;
+    background-color: #7864ac;
 }
 .purple-res .result-marker i,
 .purple-res h4 {
-    color: #fd15fd;
+    color: #7864ac;
 }
 
 .magic-wheel-legend {
