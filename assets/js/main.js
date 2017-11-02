@@ -48,6 +48,7 @@ $(document).ready(function () {
         clearInterval(sliderTimer);
         sliderTimer = null;
         slider();
+        sliderDuration = 35000;
         sliderTimer = setInterval(nextSlide, sliderDuration);
     });
 
