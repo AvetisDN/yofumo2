@@ -501,6 +501,9 @@ header.dark a {
     width: 70%;
     margin-left: 30%;
 }
+#slider .slides-container figure.white-txt a {
+    color: #ffffff;
+}
 #slider .slides-container figure.slide4 figcaption p {
     width: 80%;
     margin-left: 20%;
@@ -2656,4 +2659,14 @@ sup {
     footer {
         height: 16vh;
     }
+}
+
+
+.orange-icon {
+    background-image: url("../img/icon_i.png");
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    transform: translateY(5px);
 }
