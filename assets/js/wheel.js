@@ -64,18 +64,11 @@ var picker = {
             // draw the inner circle
             var selected = undefined;
             for (var i = picker.markers.list.length - 1; i >= 0; i--) {
-                /*if (picker.markers.selected == i) {
-                 selected = picker.markers.list[i];
-                 selected.color = picker.colors.list[i].str;
-                 continue;
-                 }*/
+
                 picker.markers.drawCircle(picker.colors.list[i].str, picker.markers.list[i], picker.markers.innerRadius, i);
             }
             // draw selected marker - on top
-            /*if (selected) {
-             picker.markers.drawCircle('#FFF', selected, picker.markers.outerRadius);
-             picker.markers.drawCircle(selected.color, selected, picker.markers.innerRadius, i);
-             }*/
+
         },
         drawContainer: function (point, radius, theta1, theta2, counterClockwise) { // helper function for markers.draw
             picker.context.fillStyle = 'rgba(255, 255, 255, 0.5)';
