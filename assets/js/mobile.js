@@ -41,7 +41,7 @@ $(document).ready(function () {
         $(this).addClass('opened');
     });
     $(document).mouseup(function (e) {
-        var container = $(".form-opener div:visible");
+        var container = $(".form-container>div:visible");
         if (!container.is(e.target) && container.has(e.target).length === 0)
         {
             container.hide();
@@ -49,16 +49,16 @@ $(document).ready(function () {
         }
     });
 
-    $('#sendmail-form-1, #sendmail-form-2').submit(function (e) {
+    $('#sendmail-form, #sendmail-form-2').submit(function (e) {
         e.preventDefault();
         var data = {
             name: $(this).find('input[name=name]').val(),
             mail: $(this).find('input[name=mail]').val(),
             wish: $(this).attr('data-product')
         };
-        var that = $(this);
+        var that = $(this).parent();
         $.ajax({
-            url: 'mail.php',
+            url: '../mail.php',
             type: 'post',
             data: data,
             success: function(result) {

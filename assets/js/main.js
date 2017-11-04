@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
     var sliderDuration = 12000;
     var sliderDurationClick = 22000;
     var sliderTimer = null;
@@ -192,15 +194,15 @@ $(document).ready(function () {
     }
 
 
-    $('a[href*="sendmail"]:has(div:hidden)').click(function (e) {
+    $('a[href*="sendmail"]').click(function (e) {
         e.preventDefault();
-        $(this).find('div:first').show(400);
+        $(this).next().show(400);
         clearInterval(sliderTimer);
         sliderTimer = null;
     });
     $(document).mouseup(function (e) {
-        var container = $("a[href*='sendmail'] div:visible");
-        if (container.length>0 && !container.is(e.target) && container.has(e.target).length === 0) {
+        var container = $(".form-container>div:visible");
+        if (container.length > 0 && !container.is(e.target) && container.has(e.target).length === 0) {
             container.hide(400);
             sliderTimer = setInterval(nextSlide, sliderDurationClick);
         }
@@ -225,9 +227,9 @@ $(document).ready(function () {
             mail: $(this).find('input[name=mail]').val(),
             wish: $(this).attr('data-product')
         };
-        var that = $(this);
+        var that = $(this).parent();
         $.ajax({
-            url: 'mail.php',
+            url: '/mail.php',
             type: 'post',
             data: data,
             success: function (result) {

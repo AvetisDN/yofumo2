@@ -2561,16 +2561,21 @@ sup {
     line-height: 1.3333rem;
 }
 
-
+.form-container {
+    position: relative;
+    border-radius: 20px;
+}
 #sendmail, #sendmail2 {
     position: absolute;
     background-color: #ffffff;
     padding: 1.5rem;
     padding-top: 2.5rem;
-    top:0;
-    right:0;
     border-radius: 1.3rem;
     display: none;
+    z-index: 99999;
+    top:30px;
+    right: 0;
+    width: 300px;
 }
 [id*='sendmail'] input {
     width: 284px;
