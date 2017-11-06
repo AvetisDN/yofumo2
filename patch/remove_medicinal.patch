@@ -1,0 +1,59 @@
+diff --git a/m/terpenes.html b/m/terpenes.html
+index 993a46e..d8d0100 100644
+--- a/m/terpenes.html
++++ b/m/terpenes.html
+@@ -139,7 +139,7 @@
+                     <h5>Curated Terpene Enhancements</h5>
+                     <p>Targets specific terpenes and their attributes
+                         and increases those terpene characteristics to
+-                        emphasize specific medicinal, aroma and/or
++                        emphasize specific aroma and/or
+                         flavor elements.<br><br>
+                         Proprietary Yofumo Analysis and Blending.</p>
+                 </div>
+diff --git a/terpenes-enfleurage.html b/terpenes-enfleurage.html
+index d6738bc..e3939c9 100644
+--- a/terpenes-enfleurage.html
++++ b/terpenes-enfleurage.html
+@@ -132,7 +132,7 @@
+                     <li>Partial Plant |</li>
+                     <li>Natural Organics |</li>
+                 </ul>
+-                <p>Whether its increasing medicinal terpene concentrations, enhancing existing profiles,
++                <p>Whether its increasing terpene concentrations, enhancing existing profiles,
+                     or developing new flavors Yofumo provides the only integrated terpene management
+                     system for biomass in the market. Including cannabis, teas, leafy greens, as well as
+                     other vectors currently under development.</p>
+diff --git a/terpenes-old.html b/terpenes-old.html
+index 31d8434..06a7a29 100644
+--- a/terpenes-old.html
++++ b/terpenes-old.html
+@@ -331,7 +331,7 @@
+                     <li>Partial Plant |</li>
+                     <li>Natural Organics |</li>
+                 </ul>
+-                <p>Whether its increasing medicinal terpene concentrations, enhancing existing profiles,
++                <p>Whether its increasing terpene concentrations, enhancing existing profiles,
+                     or developing new flavors Yofumo provides the only integrated terpene management
+                     system for biomass in the market. Including cannabis, teas, leafy greens, as well as
+                     other vectors currently under development.</p>
+@@ -503,4 +503,4 @@
+ <script src="assets/js/main.js"></script>
+
+ </body>
+-</html>
+\ No newline at end of file
++</html>
+diff --git a/terpenes.html b/terpenes.html
+index faf9cc2..68d46b1 100644
+--- a/terpenes.html
++++ b/terpenes.html
+@@ -197,7 +197,7 @@
+                         <h5>Curated Terpene Enhancements</h5>
+                         <p>Targets specific terpenes and their attributes
+                             and increases those terpene characteristics to
+-                            emphasize specific medicinal, aroma and/or
++                            emphasize specific aroma and/or
+                             flavor elements.<br><br>
+                             Proprietary Yofumo Analysis and Blending.</p>
+                     </div>
